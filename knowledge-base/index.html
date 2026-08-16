@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Knowledge Base — thisisnabi.dev</title>
+  <meta name="description" content="A comprehensive offline knowledge base of 334 software design principles and patterns from thisisnabi.dev curriculum">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -12,342 +13,1784 @@
       <div class="kb-logo">~<span>nabi</span>.dev KB</div>
       <input type="text" id="kbSearch" class="kb-search" placeholder="Search topics... (press /)">
       <ul class="kb-nav">
-      <li class="kb-nav-item">
-        <a href="#part1" class="kb-nav-link">Part 1: Foundations</a>
-        <span class="kb-nav-count">48</span>
-      </li>
-      <li class="kb-nav-item">
-        <a href="#part2" class="kb-nav-link">Part 2: Modularity &amp; Design</a>
-        <span class="kb-nav-count">0</span>
-      </li>
-      <li class="kb-nav-item">
-        <a href="#part3" class="kb-nav-link">Part 3: Application Architecture</a>
-        <span class="kb-nav-count">0</span>
-      </li>
-      <li class="kb-nav-item">
-        <a href="#part4" class="kb-nav-link">Part 4: Performance &amp; Reliability</a>
-        <span class="kb-nav-count">0</span>
-      </li>
-      <li class="kb-nav-item">
-        <a href="#part5" class="kb-nav-link">Part 5: Domain, Distributed &amp; Leadership</a>
-        <span class="kb-nav-count">0</span>
-      </li>
-      <li class="kb-nav-item">
-        <a href="#part6" class="kb-nav-link">Part 6: Cross-Cutting Tracks</a>
-        <span class="kb-nav-count">0</span>
-      </li>
+        <li class="kb-nav-item">
+          <a href="#part1" class="kb-nav-link">Part 1: Foundations</a>
+          <span class="kb-nav-count">48</span>
+        </li>
+        <li class="kb-nav-item">
+          <a href="#part2" class="kb-nav-link">Part 2: Modularity & Design</a>
+          <span class="kb-nav-count">31</span>
+        </li>
+        <li class="kb-nav-item">
+          <a href="#part3" class="kb-nav-link">Part 3: Application Architecture</a>
+          <span class="kb-nav-count">40</span>
+        </li>
+        <li class="kb-nav-item">
+          <a href="#part4" class="kb-nav-link">Part 4: Performance & Reliability</a>
+          <span class="kb-nav-count">36</span>
+        </li>
+        <li class="kb-nav-item">
+          <a href="#part5" class="kb-nav-link">Part 5: Domain, Distributed & Leadership</a>
+          <span class="kb-nav-count">43</span>
+        </li>
+        <li class="kb-nav-item">
+          <a href="#part6" class="kb-nav-link">Part 6: Cross-Cutting Tracks</a>
+          <span class="kb-nav-count">136</span>
+        </li>
       </ul>
+      <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+      </div>
     </nav>
     <main class="kb-main">
       <header class="kb-header">
         <h1 class="kb-title">Curriculum Knowledge Base</h1>
-        <p class="kb-subtitle">A comprehensive guide to software design principles and patterns from thisisnabi.dev. 48 topics across 6 parts.</p>
+        <p class="kb-subtitle">A comprehensive guide to software design principles and patterns from thisisnabi.dev. 334 topics across 6 parts.</p>
       </header>
-      
-    <section id="part1" class="kb-part">
-      <div class="kb-part-header">
-        <div class="kb-part-order">PART 01</div>
-        <h2 class="kb-part-title">Foundations</h2>
-        <p class="kb-part-desc">Core principles &amp; the GoF object-oriented patterns</p>
-        <div class="kb-part-count">48 topics</div>
-      </div>
-      <div class="kb-items">
-        <a href="pages/srp-single-responsibility.html" class="kb-item">
-          <div class="kb-item-name">SRP — Single Responsibility</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">A class should have one, and only one, reason to change.</div>
-        </a>
-        <a href="pages/ocp-openclosed.html" class="kb-item">
-          <div class="kb-item-name">OCP — Open/Closed</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">Software entities should be open for extension but closed for modification.</div>
-        </a>
-        <a href="pages/lsp-liskov-substitution.html" class="kb-item">
-          <div class="kb-item-name">LSP — Liskov Substitution</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">Subtypes must be substitutable for their base types without altering correctness.</div>
-        </a>
-        <a href="pages/isp-interface-segregation.html" class="kb-item">
-          <div class="kb-item-name">ISP — Interface Segregation</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">Clients should not be forced to depend on interfaces they do not use.</div>
-        </a>
-        <a href="pages/dip-dependency-inversion.html" class="kb-item">
-          <div class="kb-item-name">DIP — Dependency Inversion</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">High-level modules should not depend on low-level modules; both should depend on abstractions.</div>
-        </a>
-        <a href="pages/dry-dont-repeat-yourself.html" class="kb-item">
-          <div class="kb-item-name">DRY — Don’t Repeat Yourself</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">Every piece of knowledge must have a single, unambiguous, authoritative representation.</div>
-        </a>
-        <a href="pages/kiss-keep-it-simple.html" class="kb-item">
-          <div class="kb-item-name">KISS — Keep It Simple</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">Keep designs simple and straightforward; avoid unnecessary complexity.</div>
-        </a>
-        <a href="pages/yagni.html" class="kb-item">
-          <div class="kb-item-name">YAGNI</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/cqs-commandquery-separation.html" class="kb-item">
-          <div class="kb-item-name">CQS — Command–Query Separation</div>
-          <span class="kb-item-type principle">principle</span>
-          <div class="kb-item-teaser">Functions should either perform an action or return data, not both.</div>
-        </a>
-        <a href="pages/information-hiding.html" class="kb-item">
-          <div class="kb-item-name">Information Hiding</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/encapsulation.html" class="kb-item">
-          <div class="kb-item-name">Encapsulation</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/high-cohesion.html" class="kb-item">
-          <div class="kb-item-name">High Cohesion</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/low-coupling.html" class="kb-item">
-          <div class="kb-item-name">Low Coupling</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/composition-over-inheritance.html" class="kb-item">
-          <div class="kb-item-name">Composition over Inheritance</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/law-of-demeter.html" class="kb-item">
-          <div class="kb-item-name">Law of Demeter</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/separation-of-concerns.html" class="kb-item">
-          <div class="kb-item-name">Separation of Concerns</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/single-source-of-truth.html" class="kb-item">
-          <div class="kb-item-name">Single Source of Truth</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/fail-fast.html" class="kb-item">
-          <div class="kb-item-name">Fail Fast</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/least-astonishment.html" class="kb-item">
-          <div class="kb-item-name">Least Astonishment</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/explicit-over-implicit.html" class="kb-item">
-          <div class="kb-item-name">Explicit over Implicit</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/tell-dont-ask.html" class="kb-item">
-          <div class="kb-item-name">Tell, Don’t Ask</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/program-to-an-interface.html" class="kb-item">
-          <div class="kb-item-name">Program to an Interface</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/factory-method.html" class="kb-item">
-          <div class="kb-item-name">Factory Method</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Defines an interface for creating objects, letting subclasses decide which class to instantiate.</div>
-        </a>
-        <a href="pages/abstract-factory.html" class="kb-item">
-          <div class="kb-item-name">Abstract Factory</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Provides an interface for creating families of related objects without specifying concrete classes.</div>
-        </a>
-        <a href="pages/builder.html" class="kb-item">
-          <div class="kb-item-name">Builder</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Separates construction of complex objects from their representation.</div>
-        </a>
-        <a href="pages/prototype.html" class="kb-item">
-          <div class="kb-item-name">Prototype</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Creates new objects by copying existing prototypes.</div>
-        </a>
-        <a href="pages/singleton.html" class="kb-item">
-          <div class="kb-item-name">Singleton</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Ensures a class has only one instance and provides global access to it.</div>
-        </a>
-        <a href="pages/static-factory-method.html" class="kb-item">
-          <div class="kb-item-name">Static Factory Method</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Defines an interface for creating objects, letting subclasses decide which class to instantiate.</div>
-        </a>
-        <a href="pages/adapter.html" class="kb-item">
-          <div class="kb-item-name">Adapter</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Converts the interface of a class into another interface clients expect.</div>
-        </a>
-        <a href="pages/bridge.html" class="kb-item">
-          <div class="kb-item-name">Bridge</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Decouples abstraction from implementation so they can vary independently.</div>
-        </a>
-        <a href="pages/composite.html" class="kb-item">
-          <div class="kb-item-name">Composite</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Composes objects into tree structures to represent part-whole hierarchies.</div>
-        </a>
-        <a href="pages/decorator.html" class="kb-item">
-          <div class="kb-item-name">Decorator</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Attaches additional responsibilities to objects dynamically.</div>
-        </a>
-        <a href="pages/facade.html" class="kb-item">
-          <div class="kb-item-name">Facade</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Provides a simplified interface to a larger body of code.</div>
-        </a>
-        <a href="pages/flyweight.html" class="kb-item">
-          <div class="kb-item-name">Flyweight</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/proxy.html" class="kb-item">
-          <div class="kb-item-name">Proxy</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/chain-of-responsibility.html" class="kb-item">
-          <div class="kb-item-name">Chain of Responsibility</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/command.html" class="kb-item">
-          <div class="kb-item-name">Command</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Encapsulates a request as an object, parameterizing clients with queues and operations.</div>
-        </a>
-        <a href="pages/interpreter.html" class="kb-item">
-          <div class="kb-item-name">Interpreter</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/iterator.html" class="kb-item">
-          <div class="kb-item-name">Iterator</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/mediator.html" class="kb-item">
-          <div class="kb-item-name">Mediator</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/memento.html" class="kb-item">
-          <div class="kb-item-name">Memento</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/observer.html" class="kb-item">
-          <div class="kb-item-name">Observer</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Defines a one-to-many dependency so when one object changes state, all dependents are notified.</div>
-        </a>
-        <a href="pages/state.html" class="kb-item">
-          <div class="kb-item-name">State</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Allows an object to alter its behavior when its internal state changes.</div>
-        </a>
-        <a href="pages/strategy.html" class="kb-item">
-          <div class="kb-item-name">Strategy</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Defines a family of algorithms, encapsulates each, and makes them interchangeable.</div>
-        </a>
-        <a href="pages/template-method.html" class="kb-item">
-          <div class="kb-item-name">Template Method</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/visitor.html" class="kb-item">
-          <div class="kb-item-name">Visitor</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">Separates an algorithm from the object structure it operates on.</div>
-        </a>
-        <a href="pages/null-object.html" class="kb-item">
-          <div class="kb-item-name">Null Object</div>
-          <span class="kb-item-type pattern">pattern</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-        <a href="pages/value-object.html" class="kb-item">
-          <div class="kb-item-name">Value Object</div>
-          <span class="kb-item-type topic">topic</span>
-          <div class="kb-item-teaser">A fundamental concept in software design and architecture.</div>
-        </a>
-      </div>
-    </section>
-    <section id="part2" class="kb-part">
-      <div class="kb-part-header">
-        <div class="kb-part-order">PART 02</div>
-        <h2 class="kb-part-title">Modularity &amp; Design</h2>
-        
-        <div class="kb-part-count">0 topics</div>
-      </div>
-      <div class="kb-items">
-      </div>
-    </section>
-    <section id="part3" class="kb-part">
-      <div class="kb-part-header">
-        <div class="kb-part-order">PART 03</div>
-        <h2 class="kb-part-title">Application Architecture</h2>
-        
-        <div class="kb-part-count">0 topics</div>
-      </div>
-      <div class="kb-items">
-      </div>
-    </section>
-    <section id="part4" class="kb-part">
-      <div class="kb-part-header">
-        <div class="kb-part-order">PART 04</div>
-        <h2 class="kb-part-title">Performance &amp; Reliability</h2>
-        
-        <div class="kb-part-count">0 topics</div>
-      </div>
-      <div class="kb-items">
-      </div>
-    </section>
-    <section id="part5" class="kb-part">
-      <div class="kb-part-header">
-        <div class="kb-part-order">PART 05</div>
-        <h2 class="kb-part-title">Domain, Distributed &amp; Leadership</h2>
-        
-        <div class="kb-part-count">0 topics</div>
-      </div>
-      <div class="kb-items">
-      </div>
-    </section>
-    <section id="part6" class="kb-part">
-      <div class="kb-part-header">
-        <div class="kb-part-order">PART 06</div>
-        <h2 class="kb-part-title">Cross-Cutting Tracks</h2>
-        
-        <div class="kb-part-count">0 topics</div>
-      </div>
-      <div class="kb-items">
-      </div>
-    </section>
-      <div class="kb-no-results" style="display:none;">No topics match your search.</div>
+
+      <!-- Part 1: Foundations -->
+      <section id="part1" class="kb-part">
+        <div class="kb-part-header">
+          <div class="kb-part-order">PART 01</div>
+          <h2 class="kb-part-title">Foundations</h2>
+          <p class="kb-part-desc">Core principles & the GoF object-oriented patterns</p>
+          <div class="kb-part-count">48 topics</div>
+        </div>
+        <div class="kb-items">
+          <a href="pages/srp-single-responsibility.html" class="kb-item">
+            <div class="kb-item-name">SRP — Single Responsibility</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/ocp-openclosed.html" class="kb-item">
+            <div class="kb-item-name">OCP — Open/Closed</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/lsp-liskov-substitution.html" class="kb-item">
+            <div class="kb-item-name">LSP — Liskov Substitution</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/isp-interface-segregation.html" class="kb-item">
+            <div class="kb-item-name">ISP — Interface Segregation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/dip-dependency-inversion.html" class="kb-item">
+            <div class="kb-item-name">DIP — Dependency Inversion</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/dry-dont-repeat-yourself.html" class="kb-item">
+            <div class="kb-item-name">DRY — Don't Repeat Yourself</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/kiss-keep-it-simple.html" class="kb-item">
+            <div class="kb-item-name">KISS — Keep It Simple</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/yagni.html" class="kb-item">
+            <div class="kb-item-name">YAGNI</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/cqs-command-query-separation.html" class="kb-item">
+            <div class="kb-item-name">CQS — Command–Query Separation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/information-hiding.html" class="kb-item">
+            <div class="kb-item-name">Information Hiding</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/encapsulation.html" class="kb-item">
+            <div class="kb-item-name">Encapsulation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/high-cohesion.html" class="kb-item">
+            <div class="kb-item-name">High Cohesion</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/low-coupling.html" class="kb-item">
+            <div class="kb-item-name">Low Coupling</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/composition-over-inheritance.html" class="kb-item">
+            <div class="kb-item-name">Composition over Inheritance</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/law-of-demeter.html" class="kb-item">
+            <div class="kb-item-name">Law of Demeter</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/separation-of-concerns.html" class="kb-item">
+            <div class="kb-item-name">Separation of Concerns</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/single-source-of-truth.html" class="kb-item">
+            <div class="kb-item-name">Single Source of Truth</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/fail-fast.html" class="kb-item">
+            <div class="kb-item-name">Fail Fast</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/least-astonishment.html" class="kb-item">
+            <div class="kb-item-name">Least Astonishment</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/explicit-over-implicit.html" class="kb-item">
+            <div class="kb-item-name">Explicit over Implicit</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/tell-dont-ask.html" class="kb-item">
+            <div class="kb-item-name">Tell, Don't Ask</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/program-to-an-interface.html" class="kb-item">
+            <div class="kb-item-name">Program to an Interface</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/factory-method.html" class="kb-item">
+            <div class="kb-item-name">Factory Method</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/abstract-factory.html" class="kb-item">
+            <div class="kb-item-name">Abstract Factory</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/builder.html" class="kb-item">
+            <div class="kb-item-name">Builder</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/prototype.html" class="kb-item">
+            <div class="kb-item-name">Prototype</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/singleton.html" class="kb-item">
+            <div class="kb-item-name">Singleton</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/static-factory-method.html" class="kb-item">
+            <div class="kb-item-name">Static Factory Method</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/adapter.html" class="kb-item">
+            <div class="kb-item-name">Adapter</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/bridge.html" class="kb-item">
+            <div class="kb-item-name">Bridge</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/composite.html" class="kb-item">
+            <div class="kb-item-name">Composite</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/decorator.html" class="kb-item">
+            <div class="kb-item-name">Decorator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/facade.html" class="kb-item">
+            <div class="kb-item-name">Facade</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/flyweight.html" class="kb-item">
+            <div class="kb-item-name">Flyweight</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/proxy.html" class="kb-item">
+            <div class="kb-item-name">Proxy</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/chain-of-responsibility.html" class="kb-item">
+            <div class="kb-item-name">Chain of Responsibility</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/command.html" class="kb-item">
+            <div class="kb-item-name">Command</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/interpreter.html" class="kb-item">
+            <div class="kb-item-name">Interpreter</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/iterator.html" class="kb-item">
+            <div class="kb-item-name">Iterator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/mediator.html" class="kb-item">
+            <div class="kb-item-name">Mediator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/memento.html" class="kb-item">
+            <div class="kb-item-name">Memento</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/observer.html" class="kb-item">
+            <div class="kb-item-name">Observer</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/state.html" class="kb-item">
+            <div class="kb-item-name">State</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/strategy.html" class="kb-item">
+            <div class="kb-item-name">Strategy</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/template-method.html" class="kb-item">
+            <div class="kb-item-name">Template Method</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/visitor.html" class="kb-item">
+            <div class="kb-item-name">Visitor</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/null-object.html" class="kb-item">
+            <div class="kb-item-name">Null Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/value-object.html" class="kb-item">
+            <div class="kb-item-name">Value Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Part 2: Modularity & Design -->
+      <section id="part2" class="kb-part">
+        <div class="kb-part-header">
+          <div class="kb-part-order">PART 02</div>
+          <h2 class="kb-part-title">Modularity & Design</h2>
+          <p class="kb-part-desc">Principles and patterns for modular, maintainable system design</p>
+          <div class="kb-part-count">31 topics</div>
+        </div>
+        <div class="kb-items">
+          <a href="pages/rep-reuse-release-equivalence.html" class="kb-item">
+            <div class="kb-item-name">REP — Reuse/Release Equivalence</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/ccp-common-closure.html" class="kb-item">
+            <div class="kb-item-name">CCP — Common Closure</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/crp-common-reuse.html" class="kb-item">
+            <div class="kb-item-name">CRP — Common Reuse</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/adp-acyclic-dependencies.html" class="kb-item">
+            <div class="kb-item-name">ADP — Acyclic Dependencies</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/sdp-stable-dependencies.html" class="kb-item">
+            <div class="kb-item-name">SDP — Stable Dependencies</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/sap-stable-abstractions.html" class="kb-item">
+            <div class="kb-item-name">SAP — Stable Abstractions</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/stable-core-volatile-edges.html" class="kb-item">
+            <div class="kb-item-name">Stable Core, Volatile Edges</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/immutability-at-boundaries.html" class="kb-item">
+            <div class="kb-item-name">Immutability at Boundaries</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/design-for-testability.html" class="kb-item">
+            <div class="kb-item-name">Design for Testability</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/make-illegal-states-unrepresentable.html" class="kb-item">
+            <div class="kb-item-name">Make Illegal States Unrepresentable</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/convention-over-configuration.html" class="kb-item">
+            <div class="kb-item-name">Convention over Configuration</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/boy-scout-rule.html" class="kb-item">
+            <div class="kb-item-name">Boy Scout Rule</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/least-privilege.html" class="kb-item">
+            <div class="kb-item-name">Least Privilege</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/hollywood-principle.html" class="kb-item">
+            <div class="kb-item-name">Hollywood Principle</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/robustness-postels-law.html" class="kb-item">
+            <div class="kb-item-name">Robustness (Postel's Law)</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/object-pool.html" class="kb-item">
+            <div class="kb-item-name">Object Pool</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/lazy-initialization.html" class="kb-item">
+            <div class="kb-item-name">Lazy Initialization</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/multiton.html" class="kb-item">
+            <div class="kb-item-name">Multiton</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/registry.html" class="kb-item">
+            <div class="kb-item-name">Registry</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/module-pattern.html" class="kb-item">
+            <div class="kb-item-name">Module Pattern</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/dependency-injection.html" class="kb-item">
+            <div class="kb-item-name">Dependency Injection</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/service-locator.html" class="kb-item">
+            <div class="kb-item-name">Service Locator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/marker-interface.html" class="kb-item">
+            <div class="kb-item-name">Marker Interface</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/type-object.html" class="kb-item">
+            <div class="kb-item-name">Type Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/extension-object.html" class="kb-item">
+            <div class="kb-item-name">Extension Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/role-object.html" class="kb-item">
+            <div class="kb-item-name">Role Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/fluent-interface.html" class="kb-item">
+            <div class="kb-item-name">Fluent Interface</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/method-chaining.html" class="kb-item">
+            <div class="kb-item-name">Method Chaining</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/pluggable-behavior.html" class="kb-item">
+            <div class="kb-item-name">Pluggable Behavior</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/strategy-plus-factory.html" class="kb-item">
+            <div class="kb-item-name">Strategy + Factory</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/observer-plus-event-aggregator.html" class="kb-item">
+            <div class="kb-item-name">Observer + Event Aggregator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Part 3: Application Architecture -->
+      <section id="part3" class="kb-part">
+        <div class="kb-part-header">
+          <div class="kb-part-order">PART 03</div>
+          <h2 class="kb-part-title">Application Architecture</h2>
+          <p class="kb-part-desc">Architectural patterns for building scalable applications</p>
+          <div class="kb-part-count">40 topics</div>
+        </div>
+        <div class="kb-items">
+          <a href="pages/hexagonal-ports-adapters.html" class="kb-item">
+            <div class="kb-item-name">Hexagonal (Ports & Adapters)</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/separate-domain-from-infrastructure.html" class="kb-item">
+            <div class="kb-item-name">Separate Domain from Infrastructure</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/persistence-ignorance.html" class="kb-item">
+            <div class="kb-item-name">Persistence Ignorance</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/dependency-rule-clean-architecture.html" class="kb-item">
+            <div class="kb-item-name">Dependency Rule (Clean Architecture)</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/clear-transaction-boundaries.html" class="kb-item">
+            <div class="kb-item-name">Clear Transaction Boundaries</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/error-result-modeling.html" class="kb-item">
+            <div class="kb-item-name">Error/Result Modeling</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/versioned-interfaces.html" class="kb-item">
+            <div class="kb-item-name">Versioned Interfaces</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/dto-vs-domain-model.html" class="kb-item">
+            <div class="kb-item-name">DTO vs Domain Model</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/idempotency-for-commands.html" class="kb-item">
+            <div class="kb-item-name">Idempotency for Commands</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/deterministic-core.html" class="kb-item">
+            <div class="kb-item-name">Deterministic Core</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/contract-first-design.html" class="kb-item">
+            <div class="kb-item-name">Contract-First Design</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/tolerant-reader.html" class="kb-item">
+            <div class="kb-item-name">Tolerant Reader</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/backwards-compatibility.html" class="kb-item">
+            <div class="kb-item-name">Backwards Compatibility</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/model-the-domain-not-the-db.html" class="kb-item">
+            <div class="kb-item-name">Model the Domain, not the DB</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/screaming-architecture.html" class="kb-item">
+            <div class="kb-item-name">Screaming Architecture</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/repository.html" class="kb-item">
+            <div class="kb-item-name">Repository</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/unit-of-work.html" class="kb-item">
+            <div class="kb-item-name">Unit of Work</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/data-mapper.html" class="kb-item">
+            <div class="kb-item-name">Data Mapper</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/active-record.html" class="kb-item">
+            <div class="kb-item-name">Active Record</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/identity-map.html" class="kb-item">
+            <div class="kb-item-name">Identity Map</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/lazy-load.html" class="kb-item">
+            <div class="kb-item-name">Lazy Load</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/specification.html" class="kb-item">
+            <div class="kb-item-name">Specification</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/query-object.html" class="kb-item">
+            <div class="kb-item-name">Query Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/mediator-command-query-bus.html" class="kb-item">
+            <div class="kb-item-name">Mediator (Command/Query Bus)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/cqrs.html" class="kb-item">
+            <div class="kb-item-name">CQRS</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/domain-service.html" class="kb-item">
+            <div class="kb-item-name">Domain Service</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/application-service.html" class="kb-item">
+            <div class="kb-item-name">Application Service</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/gateway.html" class="kb-item">
+            <div class="kb-item-name">Gateway</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/anti-corruption-layer.html" class="kb-item">
+            <div class="kb-item-name">Anti-Corruption Layer</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/publisher-subscriber.html" class="kb-item">
+            <div class="kb-item-name">Publisher–Subscriber</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/message-channel.html" class="kb-item">
+            <div class="kb-item-name">Message Channel</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/message-router.html" class="kb-item">
+            <div class="kb-item-name">Message Router</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/content-based-router.html" class="kb-item">
+            <div class="kb-item-name">Content-Based Router</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/message-translator.html" class="kb-item">
+            <div class="kb-item-name">Message Translator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/splitter-aggregator.html" class="kb-item">
+            <div class="kb-item-name">Splitter / Aggregator</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/claim-check.html" class="kb-item">
+            <div class="kb-item-name">Claim Check</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/dead-letter-channel.html" class="kb-item">
+            <div class="kb-item-name">Dead Letter Channel</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/transactional-outbox.html" class="kb-item">
+            <div class="kb-item-name">Transactional Outbox</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/backend-for-frontend.html" class="kb-item">
+            <div class="kb-item-name">Backend for Frontend</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/api-composition.html" class="kb-item">
+            <div class="kb-item-name">API Composition</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Part 4: Performance & Reliability -->
+      <section id="part4" class="kb-part">
+        <div class="kb-part-header">
+          <div class="kb-part-order">PART 04</div>
+          <h2 class="kb-part-title">Performance & Reliability</h2>
+          <p class="kb-part-desc">Patterns and principles for high-performance, reliable systems</p>
+          <div class="kb-part-count">36 topics</div>
+        </div>
+        <div class="kb-items">
+          <a href="pages/measure-before-optimize.html" class="kb-item">
+            <div class="kb-item-name">Measure before Optimize</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/performance-budgets.html" class="kb-item">
+            <div class="kb-item-name">Performance Budgets</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/locality-of-reference.html" class="kb-item">
+            <div class="kb-item-name">Locality of Reference</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/avoid-unnecessary-allocation.html" class="kb-item">
+            <div class="kb-item-name">Avoid Unnecessary Allocation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/bounded-queues-backpressure.html" class="kb-item">
+            <div class="kb-item-name">Bounded Queues & Backpressure</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/time-semantics.html" class="kb-item">
+            <div class="kb-item-name">Time Semantics</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/resource-safety-raii-defer.html" class="kb-item">
+            <div class="kb-item-name">Resource Safety (RAII / defer)</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/predictable-degradation.html" class="kb-item">
+            <div class="kb-item-name">Predictable Degradation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/cancellation-timeout-propagation.html" class="kb-item">
+            <div class="kb-item-name">Cancellation & Timeout Propagation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/design-for-failure.html" class="kb-item">
+            <div class="kb-item-name">Design for Failure</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/let-it-crash.html" class="kb-item">
+            <div class="kb-item-name">Let It Crash</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/idempotency-under-retry.html" class="kb-item">
+            <div class="kb-item-name">Idempotency under Retry</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/cache-aside.html" class="kb-item">
+            <div class="kb-item-name">Cache-Aside</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/read-through-cache.html" class="kb-item">
+            <div class="kb-item-name">Read-Through Cache</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/write-behind-cache.html" class="kb-item">
+            <div class="kb-item-name">Write-Behind Cache</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/write-through-cache.html" class="kb-item">
+            <div class="kb-item-name">Write-Through Cache</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/memoization.html" class="kb-item">
+            <div class="kb-item-name">Memoization</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/circuit-breaker.html" class="kb-item">
+            <div class="kb-item-name">Circuit Breaker</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/retry-with-backoff-jitter.html" class="kb-item">
+            <div class="kb-item-name">Retry with Backoff + Jitter</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/timeout-guard.html" class="kb-item">
+            <div class="kb-item-name">Timeout Guard</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/bulkhead.html" class="kb-item">
+            <div class="kb-item-name">Bulkhead</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/throttling-rate-limiting.html" class="kb-item">
+            <div class="kb-item-name">Throttling / Rate Limiting</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/token-bucket.html" class="kb-item">
+            <div class="kb-item-name">Token Bucket</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/leaky-bucket.html" class="kb-item">
+            <div class="kb-item-name">Leaky Bucket</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/fallback.html" class="kb-item">
+            <div class="kb-item-name">Fallback</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/load-shedding.html" class="kb-item">
+            <div class="kb-item-name">Load Shedding</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/producer-consumer.html" class="kb-item">
+            <div class="kb-item-name">Producer–Consumer</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/thread-pool.html" class="kb-item">
+            <div class="kb-item-name">Thread Pool</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/future-promise.html" class="kb-item">
+            <div class="kb-item-name">Future / Promise</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/actor-model.html" class="kb-item">
+            <div class="kb-item-name">Actor Model</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/pipeline-seda.html" class="kb-item">
+            <div class="kb-item-name">Pipeline / SEDA</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/fan-out-fan-in.html" class="kb-item">
+            <div class="kb-item-name">Fan-out / Fan-in</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/read-write-lock.html" class="kb-item">
+            <div class="kb-item-name">Read-Write Lock</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/double-checked-locking.html" class="kb-item">
+            <div class="kb-item-name">Double-Checked Locking</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/batching.html" class="kb-item">
+            <div class="kb-item-name">Batching</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/debounce-throttle.html" class="kb-item">
+            <div class="kb-item-name">Debounce / Throttle</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Part 5: Domain, Distributed & Leadership -->
+      <section id="part5" class="kb-part">
+        <div class="kb-part-header">
+          <div class="kb-part-order">PART 05</div>
+          <h2 class="kb-part-title">Domain, Distributed & Leadership</h2>
+          <p class="kb-part-desc">DDD, distributed systems, and engineering leadership patterns</p>
+          <div class="kb-part-count">43 topics</div>
+        </div>
+        <div class="kb-items">
+          <a href="pages/ubiquitous-language.html" class="kb-item">
+            <div class="kb-item-name">Ubiquitous Language</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/bounded-contexts.html" class="kb-item">
+            <div class="kb-item-name">Bounded Contexts</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/consistency-boundaries-invariants.html" class="kb-item">
+            <div class="kb-item-name">Consistency Boundaries & Invariants</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/invariants-first-thinking.html" class="kb-item">
+            <div class="kb-item-name">Invariants-First Thinking</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/policy-as-code.html" class="kb-item">
+            <div class="kb-item-name">Policy as Code</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/evolutionary-architecture.html" class="kb-item">
+            <div class="kb-item-name">Evolutionary Architecture</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/trade-off-thinking.html" class="kb-item">
+            <div class="kb-item-name">Trade-off Thinking</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/technical-debt-as-portfolio.html" class="kb-item">
+            <div class="kb-item-name">Technical Debt as Portfolio</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/api-design-principles.html" class="kb-item">
+            <div class="kb-item-name">API Design Principles</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/continuous-integration-real.html" class="kb-item">
+            <div class="kb-item-name">Continuous Integration (real)</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/small-batch-size.html" class="kb-item">
+            <div class="kb-item-name">Small Batch Size</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/shift-left.html" class="kb-item">
+            <div class="kb-item-name">Shift-Left</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/observability-by-design.html" class="kb-item">
+            <div class="kb-item-name">Observability by Design</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/reversible-decisions-first.html" class="kb-item">
+            <div class="kb-item-name">Reversible Decisions First</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/blameless-postmortem.html" class="kb-item">
+            <div class="kb-item-name">Blameless Postmortem</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/automate-everything-repetitive.html" class="kb-item">
+            <div class="kb-item-name">Automate Everything Repetitive</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/infrastructure-as-code-mindset.html" class="kb-item">
+            <div class="kb-item-name">Infrastructure as Code mindset</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/aggregate.html" class="kb-item">
+            <div class="kb-item-name">Aggregate</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/entity.html" class="kb-item">
+            <div class="kb-item-name">Entity</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/domain-events.html" class="kb-item">
+            <div class="kb-item-name">Domain Events</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/domain-service-ddd.html" class="kb-item">
+            <div class="kb-item-name">Domain Service (DDD)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/factory-ddd.html" class="kb-item">
+            <div class="kb-item-name">Factory (DDD)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/repository-ddd.html" class="kb-item">
+            <div class="kb-item-name">Repository (DDD)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/policy-based-design.html" class="kb-item">
+            <div class="kb-item-name">Policy-based Design</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/event-sourcing.html" class="kb-item">
+            <div class="kb-item-name">Event Sourcing</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/snapshotting.html" class="kb-item">
+            <div class="kb-item-name">Snapshotting</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/saga-orchestration.html" class="kb-item">
+            <div class="kb-item-name">Saga (Orchestration)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/saga-choreography.html" class="kb-item">
+            <div class="kb-item-name">Saga (Choreography)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/process-manager.html" class="kb-item">
+            <div class="kb-item-name">Process Manager</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/published-language.html" class="kb-item">
+            <div class="kb-item-name">Published Language</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/strangler-fig.html" class="kb-item">
+            <div class="kb-item-name">Strangler Fig</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/branch-by-abstraction.html" class="kb-item">
+            <div class="kb-item-name">Branch by Abstraction</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/parallel-run.html" class="kb-item">
+            <div class="kb-item-name">Parallel Run</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/idempotent-consumer.html" class="kb-item">
+            <div class="kb-item-name">Idempotent Consumer</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/inbox-pattern.html" class="kb-item">
+            <div class="kb-item-name">Inbox Pattern</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/sidecar.html" class="kb-item">
+            <div class="kb-item-name">Sidecar</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/ambassador.html" class="kb-item">
+            <div class="kb-item-name">Ambassador</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/service-discovery.html" class="kb-item">
+            <div class="kb-item-name">Service Discovery</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/leader-election.html" class="kb-item">
+            <div class="kb-item-name">Leader Election</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/sharding-partitioning.html" class="kb-item">
+            <div class="kb-item-name">Sharding / Partitioning</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/consistent-hashing.html" class="kb-item">
+            <div class="kb-item-name">Consistent Hashing</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/event-carried-state-transfer.html" class="kb-item">
+            <div class="kb-item-name">Event-Carried State Transfer</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/materialized-view.html" class="kb-item">
+            <div class="kb-item-name">Materialized View</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Part 6: Cross-Cutting Tracks -->
+      <section id="part6" class="kb-part">
+        <div class="kb-part-header">
+          <div class="kb-part-order">PART 06</div>
+          <h2 class="kb-part-title">Cross-Cutting Tracks</h2>
+          <p class="kb-part-desc">Security, distributed systems, data, testing, concurrency, frontend, refactoring, and code quality</p>
+          <div class="kb-part-count">136 topics</div>
+        </div>
+        <div class="kb-items">
+          <a href="pages/defense-in-depth.html" class="kb-item">
+            <div class="kb-item-name">Defense in Depth</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/secure-by-default.html" class="kb-item">
+            <div class="kb-item-name">Secure by Default</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/zero-trust.html" class="kb-item">
+            <div class="kb-item-name">Zero Trust</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/fail-securely.html" class="kb-item">
+            <div class="kb-item-name">Fail Securely</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/complete-mediation.html" class="kb-item">
+            <div class="kb-item-name">Complete Mediation</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/economy-of-mechanism.html" class="kb-item">
+            <div class="kb-item-name">Economy of Mechanism</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/open-design-kerckhoffs.html" class="kb-item">
+            <div class="kb-item-name">Open Design (Kerckhoffs)</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/separation-of-duties.html" class="kb-item">
+            <div class="kb-item-name">Separation of Duties</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/cap-theorem.html" class="kb-item">
+            <div class="kb-item-name">CAP Theorem</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/pacelc.html" class="kb-item">
+            <div class="kb-item-name">PACELC</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/acid-vs-base.html" class="kb-item">
+            <div class="kb-item-name">ACID vs BASE</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/eventual-consistency.html" class="kb-item">
+            <div class="kb-item-name">Eventual Consistency</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/idempotency-as-default.html" class="kb-item">
+            <div class="kb-item-name">Idempotency as Default</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/end-to-end-argument.html" class="kb-item">
+            <div class="kb-item-name">End-to-End Argument</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/conways-law.html" class="kb-item">
+            <div class="kb-item-name">Conway's Law</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/inverse-conway-maneuver.html" class="kb-item">
+            <div class="kb-item-name">Inverse Conway Maneuver</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/you-build-it-you-run-it.html" class="kb-item">
+            <div class="kb-item-name">You Build It, You Run It</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/dora-metrics.html" class="kb-item">
+            <div class="kb-item-name">DORA Metrics</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/definition-of-done.html" class="kb-item">
+            <div class="kb-item-name">Definition of Done</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/sustainable-pace.html" class="kb-item">
+            <div class="kb-item-name">Sustainable Pace</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/trunk-based-development.html" class="kb-item">
+            <div class="kb-item-name">Trunk-Based Development</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/feature-toggles-over-branches.html" class="kb-item">
+            <div class="kb-item-name">Feature Toggles over Branches</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/optimize-for-readability.html" class="kb-item">
+            <div class="kb-item-name">Optimize for Readability</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/code-for-the-maintainer.html" class="kb-item">
+            <div class="kb-item-name">Code for the Maintainer</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/comment-why-not-what.html" class="kb-item">
+            <div class="kb-item-name">Comment Why, not What</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/naming-as-design.html" class="kb-item">
+            <div class="kb-item-name">Naming as Design</div>
+            <span class="kb-item-type principle">principle</span>
+            <div class="kb-item-teaser">A fundamental guideline for software design.</div>
+          </a>
+          <a href="pages/api-gateway.html" class="kb-item">
+            <div class="kb-item-name">API Gateway</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/gateway-aggregation.html" class="kb-item">
+            <div class="kb-item-name">Gateway Aggregation</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/gateway-offloading.html" class="kb-item">
+            <div class="kb-item-name">Gateway Offloading</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/competing-consumers.html" class="kb-item">
+            <div class="kb-item-name">Competing Consumers</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/pipes-and-filters.html" class="kb-item">
+            <div class="kb-item-name">Pipes and Filters</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/queue-based-load-leveling.html" class="kb-item">
+            <div class="kb-item-name">Queue-Based Load Leveling</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/priority-queue.html" class="kb-item">
+            <div class="kb-item-name">Priority Queue</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/scheduler-agent-supervisor.html" class="kb-item">
+            <div class="kb-item-name">Scheduler–Agent–Supervisor</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/compensating-transaction.html" class="kb-item">
+            <div class="kb-item-name">Compensating Transaction</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/health-endpoint-monitoring.html" class="kb-item">
+            <div class="kb-item-name">Health Endpoint Monitoring</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/external-configuration-store.html" class="kb-item">
+            <div class="kb-item-name">External Configuration Store</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/federated-identity.html" class="kb-item">
+            <div class="kb-item-name">Federated Identity</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/gatekeeper.html" class="kb-item">
+            <div class="kb-item-name">Gatekeeper</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/valet-key.html" class="kb-item">
+            <div class="kb-item-name">Valet Key</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/index-table.html" class="kb-item">
+            <div class="kb-item-name">Index Table</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/deployment-stamps.html" class="kb-item">
+            <div class="kb-item-name">Deployment Stamps</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/geode.html" class="kb-item">
+            <div class="kb-item-name">Geode</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/two-phase-commit.html" class="kb-item">
+            <div class="kb-item-name">Two-Phase Commit</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/three-phase-commit.html" class="kb-item">
+            <div class="kb-item-name">Three-Phase Commit</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/quorum.html" class="kb-item">
+            <div class="kb-item-name">Quorum</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/change-data-capture.html" class="kb-item">
+            <div class="kb-item-name">Change Data Capture</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/cell-based-architecture.html" class="kb-item">
+            <div class="kb-item-name">Cell-Based Architecture</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/write-ahead-log.html" class="kb-item">
+            <div class="kb-item-name">Write-Ahead Log</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/lsm-tree.html" class="kb-item">
+            <div class="kb-item-name">LSM-Tree</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/btree-bplus-tree-indexing.html" class="kb-item">
+            <div class="kb-item-name">B-Tree / B+Tree Indexing</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/bloom-filter.html" class="kb-item">
+            <div class="kb-item-name">Bloom Filter</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/hyperloglog.html" class="kb-item">
+            <div class="kb-item-name">HyperLogLog</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/count-min-sketch.html" class="kb-item">
+            <div class="kb-item-name">Count-Min Sketch</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/merkle-tree.html" class="kb-item">
+            <div class="kb-item-name">Merkle Tree</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/vector-clock.html" class="kb-item">
+            <div class="kb-item-name">Vector Clock</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/crdt.html" class="kb-item">
+            <div class="kb-item-name">CRDT</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/lambda-architecture.html" class="kb-item">
+            <div class="kb-item-name">Lambda Architecture</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/kappa-architecture.html" class="kb-item">
+            <div class="kb-item-name">Kappa Architecture</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/star-schema.html" class="kb-item">
+            <div class="kb-item-name">Star Schema</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/slowly-changing-dimensions.html" class="kb-item">
+            <div class="kb-item-name">Slowly Changing Dimensions</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/read-replica.html" class="kb-item">
+            <div class="kb-item-name">Read Replica</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/multi-leader-replication.html" class="kb-item">
+            <div class="kb-item-name">Multi-Leader Replication</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/leaderless-replication.html" class="kb-item">
+            <div class="kb-item-name">Leaderless Replication</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/partitioning-strategies.html" class="kb-item">
+            <div class="kb-item-name">Partitioning Strategies</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/secondary-index.html" class="kb-item">
+            <div class="kb-item-name">Secondary Index</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/dummy.html" class="kb-item">
+            <div class="kb-item-name">Dummy</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/fake.html" class="kb-item">
+            <div class="kb-item-name">Fake</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/stub.html" class="kb-item">
+            <div class="kb-item-name">Stub</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/spy.html" class="kb-item">
+            <div class="kb-item-name">Spy</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/mock.html" class="kb-item">
+            <div class="kb-item-name">Mock</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/arrange-act-assert.html" class="kb-item">
+            <div class="kb-item-name">Arrange–Act–Assert</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/given-when-then.html" class="kb-item">
+            <div class="kb-item-name">Given–When–Then</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/page-object.html" class="kb-item">
+            <div class="kb-item-name">Page Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/test-data-builder.html" class="kb-item">
+            <div class="kb-item-name">Test Data Builder</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/object-mother.html" class="kb-item">
+            <div class="kb-item-name">Object Mother</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/golden-master-approval.html" class="kb-item">
+            <div class="kb-item-name">Golden Master / Approval</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/property-based-testing.html" class="kb-item">
+            <div class="kb-item-name">Property-Based Testing</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/snapshot-testing.html" class="kb-item">
+            <div class="kb-item-name">Snapshot Testing</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/test-pyramid.html" class="kb-item">
+            <div class="kb-item-name">Test Pyramid</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/consumer-driven-contract.html" class="kb-item">
+            <div class="kb-item-name">Consumer-Driven Contract</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/fixture-setup-teardown.html" class="kb-item">
+            <div class="kb-item-name">Fixture / Setup–Teardown</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/semaphore.html" class="kb-item">
+            <div class="kb-item-name">Semaphore</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/monitor-mutex.html" class="kb-item">
+            <div class="kb-item-name">Monitor / Mutex</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/barrier.html" class="kb-item">
+            <div class="kb-item-name">Barrier</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/countdown-latch.html" class="kb-item">
+            <div class="kb-item-name">CountDown Latch</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/active-object.html" class="kb-item">
+            <div class="kb-item-name">Active Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/reactor.html" class="kb-item">
+            <div class="kb-item-name">Reactor</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/proactor.html" class="kb-item">
+            <div class="kb-item-name">Proactor</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/half-sync-half-async.html" class="kb-item">
+            <div class="kb-item-name">Half-Sync / Half-Async</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/guarded-suspension.html" class="kb-item">
+            <div class="kb-item-name">Guarded Suspension</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/balking.html" class="kb-item">
+            <div class="kb-item-name">Balking</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/copy-on-write.html" class="kb-item">
+            <div class="kb-item-name">Copy-on-Write</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/read-copy-update.html" class="kb-item">
+            <div class="kb-item-name">Read-Copy-Update</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/immutable-object.html" class="kb-item">
+            <div class="kb-item-name">Immutable Object</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/thread-local-storage.html" class="kb-item">
+            <div class="kb-item-name">Thread-Local Storage</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/work-stealing.html" class="kb-item">
+            <div class="kb-item-name">Work Stealing</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/compare-and-swap.html" class="kb-item">
+            <div class="kb-item-name">Compare-and-Swap</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/mvc.html" class="kb-item">
+            <div class="kb-item-name">MVC</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/mvp.html" class="kb-item">
+            <div class="kb-item-name">MVP</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/mvvm.html" class="kb-item">
+            <div class="kb-item-name">MVVM</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/flux-redux.html" class="kb-item">
+            <div class="kb-item-name">Flux / Redux</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/component-based-architecture.html" class="kb-item">
+            <div class="kb-item-name">Component-Based Architecture</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/container-presentational.html" class="kb-item">
+            <div class="kb-item-name">Container / Presentational</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/higher-order-component.html" class="kb-item">
+            <div class="kb-item-name">Higher-Order Component</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/render-props.html" class="kb-item">
+            <div class="kb-item-name">Render Props</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/hooks-pattern.html" class="kb-item">
+            <div class="kb-item-name">Hooks Pattern</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/optimistic-ui.html" class="kb-item">
+            <div class="kb-item-name">Optimistic UI</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/virtual-dom-reconciliation.html" class="kb-item">
+            <div class="kb-item-name">Virtual DOM / Reconciliation</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/state-machine-ui-xstate.html" class="kb-item">
+            <div class="kb-item-name">State Machine UI (XState)</div>
+            <span class="kb-item-type pattern">pattern</span>
+            <div class="kb-item-teaser">A reusable solution to a commonly occurring problem.</div>
+          </a>
+          <a href="pages/extract-method.html" class="kb-item">
+            <div class="kb-item-name">Extract Method</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/extract-class.html" class="kb-item">
+            <div class="kb-item-name">Extract Class</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/inline-method-variable.html" class="kb-item">
+            <div class="kb-item-name">Inline Method / Variable</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/move-method-field.html" class="kb-item">
+            <div class="kb-item-name">Move Method / Field</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/rename-for-intent.html" class="kb-item">
+            <div class="kb-item-name">Rename for Intent</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/replace-conditional-with-polymorphism.html" class="kb-item">
+            <div class="kb-item-name">Replace Conditional with Polymorphism</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/introduce-parameter-object.html" class="kb-item">
+            <div class="kb-item-name">Introduce Parameter Object</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/replace-magic-number.html" class="kb-item">
+            <div class="kb-item-name">Replace Magic Number</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/decompose-conditional.html" class="kb-item">
+            <div class="kb-item-name">Decompose Conditional</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/replace-temp-with-query.html" class="kb-item">
+            <div class="kb-item-name">Replace Temp with Query</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/encapsulate-field.html" class="kb-item">
+            <div class="kb-item-name">Encapsulate Field</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/pull-up-push-down.html" class="kb-item">
+            <div class="kb-item-name">Pull Up / Push Down</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/inheritance-to-delegation.html" class="kb-item">
+            <div class="kb-item-name">Inheritance → Delegation</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/split-phase.html" class="kb-item">
+            <div class="kb-item-name">Split Phase</div>
+            <span class="kb-item-type technique">technique</span>
+            <div class="kb-item-teaser">A specific method for improving code quality.</div>
+          </a>
+          <a href="pages/long-method.html" class="kb-item">
+            <div class="kb-item-name">Long Method</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/large-class-god-object.html" class="kb-item">
+            <div class="kb-item-name">Large Class / God Object</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/feature-envy.html" class="kb-item">
+            <div class="kb-item-name">Feature Envy</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/data-clumps.html" class="kb-item">
+            <div class="kb-item-name">Data Clumps</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/primitive-obsession.html" class="kb-item">
+            <div class="kb-item-name">Primitive Obsession</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/shotgun-surgery.html" class="kb-item">
+            <div class="kb-item-name">Shotgun Surgery</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/divergent-change.html" class="kb-item">
+            <div class="kb-item-name">Divergent Change</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/inappropriate-intimacy.html" class="kb-item">
+            <div class="kb-item-name">Inappropriate Intimacy</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/message-chains.html" class="kb-item">
+            <div class="kb-item-name">Message Chains</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/middle-man.html" class="kb-item">
+            <div class="kb-item-name">Middle Man</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/speculative-generality.html" class="kb-item">
+            <div class="kb-item-name">Speculative Generality</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+          <a href="pages/refused-bequest.html" class="kb-item">
+            <div class="kb-item-name">Refused Bequest</div>
+            <span class="kb-item-type smell">smell</span>
+            <div class="kb-item-teaser">A warning sign indicating potential problems in code.</div>
+          </a>
+        </div>
+      </section>
     </main>
   </div>
-  <button id="kbThemeToggle" class="kb-theme-toggle" aria-label="Toggle dark mode">☀️</button>
   <script src="assets/app.js"></script>
 </body>
 </html>

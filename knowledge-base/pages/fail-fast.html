@@ -4,199 +4,94 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fail Fast — Knowledge Base</title>
+  <meta name="description" content="A fundamental guideline for software design.">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <div class="kb-container">
     <nav class="kb-sidebar">
-      <div class="kb-logo"><a href="../index.html" style="text-decoration:none;color:inherit;">~<span>nabi</span>.dev KB</a></div>
-      <input type="text" id="kbSearch" class="kb-search" placeholder="Search topics...">
+      <div class="kb-logo">~<span>nabi</span>.dev KB</div>
+      <input type="text" id="kbSearch" class="kb-search" placeholder="Search topics... (press /)">
       <ul class="kb-nav">
-        <li class="kb-nav-item"><a href="../index.html" class="kb-nav-link">← Back to Index</a></li>
-        <li class="kb-nav-item"><a href="../index.html#part1" class="kb-nav-link">Part 1: Foundations</a></li>
+        <li class="kb-nav-item"><a href="../index.html#part1" class="kb-nav-link">Part 1: Foundations</a><span class="kb-nav-count">48</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part2" class="kb-nav-link">Part 2: Modularity & Design</a><span class="kb-nav-count">31</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part3" class="kb-nav-link">Part 3: Application Architecture</a><span class="kb-nav-count">40</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part4" class="kb-nav-link">Part 4: Performance & Reliability</a><span class="kb-nav-count">36</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part5" class="kb-nav-link">Part 5: Domain, Distributed & Leadership</a><span class="kb-nav-count">43</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part6" class="kb-nav-link">Part 6: Cross-Cutting Tracks</a><span class="kb-nav-count">136</span></li>
       </ul>
+      <div class="theme-toggle"><button id="themeToggle" class="theme-btn">🌙 Dark Mode</button></div>
     </nav>
     <main class="kb-main">
-      <article class="kb-page">
-        <header class="kb-page-header">
-          <div class="kb-breadcrumb">
-            <a href="../index.html">Home</a> / 
-            <a href="../index.html#part1">Part 1</a> / 
-            <span>topic</span>
+      <div class="topic-container">
+        <header class="topic-header">
+          <div class="topic-breadcrumb"><a href="../index.html">← Back to Index</a> / Part 1: Foundations</div>
+          <h1 class="topic-title">Fail Fast</h1>
+          <div class="topic-meta">
+            <span class="topic-part">Part 1: Foundations</span>
+            <span class="topic-type-badge principle">principle</span>
           </div>
-          <h1 class="kb-page-title">Fail Fast</h1>
-          <div class="kb-page-meta">Part 1: Foundations</div>
+          <nav class="topic-nav"><a href="single-source-of-truth.html" class="topic-nav-btn">← Previous</a><a href="least-astonishment.html" class="topic-nav-btn">Next →</a></nav>
         </header>
         
-        <section class="kb-section">
-          <h2 class="kb-section-title">Definition</h2>
-          <div class="kb-section-content">
-            <p><strong>Fail Fast</strong> is a fundamental concept in software design that guides developers toward creating maintainable, scalable, and robust systems.</p><p>This topic addresses common challenges in software development by providing a proven approach to structuring code and making design decisions. Understanding and applying this topic helps prevent technical debt and improves code quality.</p>
-          </div>
+        <section class="topic-section">
+          <h2>Definition</h2>
+          <p><strong>Fail Fast</strong> is a fundamental guideline for software design.</p>
         </section>
         
-        <section class="kb-section">
-          <h2 class="kb-section-title">The Problem It Solves</h2>
-          <div class="kb-section-content">
-            <p>Without applying <strong>Fail Fast</strong>, codebases tend to accumulate technical debt rapidly. Developers face several concrete pains:</p><ul><li><strong>Tight coupling:</strong> Changes in one area ripple through unrelated parts of the system.</li><li><strong>Difficulty testing:</strong> Units of code cannot be isolated for testing without extensive mocking.</li><li><strong>Poor readability:</strong> The intent of the code becomes obscured by mixed concerns.</li><li><strong>Fragile code:</strong> Small modifications cause unexpected failures elsewhere.</li><li><strong>Reduced velocity:</strong> Teams spend more time fixing issues than adding value.</li></ul><p>These problems compound over time, making the codebase increasingly difficult to maintain and extend.</p>
-          </div>
+        <section class="topic-section">
+          <h2>The Problem It Solves</h2>
+          <p>Without this principle, developers face challenges with tight coupling, code duplication, rigidity, poor testability, and unclear responsibilities.</p>
         </section>
         
-        <section class="kb-section">
-          <h2 class="kb-section-title">Reasoning & Concepts</h2>
-          <div class="kb-section-content">
-            <p>The reasoning behind <strong>Fail Fast</strong> stems from decades of software engineering experience. It's not an arbitrary rule but an observation about what makes systems sustainable.</p><p><strong>Why it works:</strong> By following this topic, you align your code structure with how humans think about problems. We naturally decompose complex problems into smaller, manageable pieces. This topic formalizes that intuition.</p><p><strong>Design thinking:</strong> Good software design mirrors the domain it models. When code structure reflects business concepts clearly, changes in requirements map cleanly to changes in code. This topic helps achieve that alignment.</p><p><strong>Cognitive load:</strong> Developers can only hold so much in working memory. This topic reduces cognitive load by creating clear boundaries and expectations, allowing developers to focus on one concern at a time.</p>
-          </div>
-        </section>
-        
-        <section class="kb-section">
-          <h2 class="kb-section-title">C++ Code Examples</h2>
-          <div class="kb-section-content">
-            <h3>Before / Naive Approach</h3>
-            <div class="kb-code-block"><pre><code>// Violation: Multiple responsibilities in one class
-class UserManager {
-public:
-    // Handles user data
-    void setUserData(const std::string& name, int age) {
-        // ... store data
-    }
-    
-    // Handles database operations  
-    void saveToDatabase() {
-        // SQL connection and insert
-    }
-    
-    // Handles email notifications
-    void sendWelcomeEmail() {
-        // SMTP logic
-    }
-    
-    // Handles validation
-    bool validateUser() {
-        // Validation logic
-    }
-};
-
-// Problems:
-// - Cannot test database without actual DB
-// - Email changes require recompiling user logic
-// - Validation rules mixed with business logic
-// - Hard to reuse user data without DB/email</code></pre></div>
-            <h3>After / Applying Fail Fast</h3>
-            <div class="kb-code-block"><pre><code>// Solution: Each responsibility in its own class
-
-// 1. Pure data holder
-struct UserData {
-    std::string name;
-    int age;
-};
-
-// 2. Validation logic (single responsibility)
-class UserValidator {
-public:
-    static bool isValid(const UserData& user) {
-        return !user.name.empty() && user.age > 0;
-    }
-};
-
-// 3. Database operations (single responsibility)
-class UserRepository {
-public:
-    virtual ~UserRepository() = default;
-    virtual void save(const UserData& user) = 0;
-};
-
-class SqlUserRepository : public UserRepository {
-public:
-    void save(const UserData& user) override {
-        // SQL implementation
-    }
-};
-
-// 4. Email notification (single responsibility)
-class UserNotifier {
-public:
-    virtual ~UserNotifier() = default;
-    virtual void sendWelcome(const std::string& name) = 0;
-};
-
-// 5. Orchestrator using dependencies
-class UserService {
-    std::unique_ptr<UserRepository> repo_;
-    std::unique_ptr<UserNotifier> notifier_;
-    
-public:
-    UserService(std::unique_ptr<UserRepository> repo,
-                std::unique_ptr<UserNotifier> notifier)
-        : repo_(std::move(repo)), notifier_(std::move(notifier)) {}
-    
-    void registerUser(const std::string& name, int age) {
-        UserData user{name, age};
-        
-        if (!UserValidator::isValid(user)) {
-            throw std::invalid_argument("Invalid user data");
-        }
-        
-        repo_->save(user);
-        notifier_->sendWelcome(name);
-    }
-};
-
-// Benefits:
-// - Each class has one reason to change
-// - Easy to mock for testing
-// - Can swap implementations (e.g., different DB)
-// - Clear separation of concerns</code></pre></div>
-          </div>
-        </section>
-        
-        <section class="kb-section">
-          <h2 class="kb-section-title">Trade-offs & Costs</h2>
-          <div class="kb-section-content">
-            <p>While <strong>Fail Fast</strong> provides significant benefits, it's not without costs:</p><ul><li><strong>Increased abstraction:</strong> More layers of indirection can make code harder to follow initially.</li><li><strong>More files/classes:</strong> Separation often means more artifacts to manage.</li><li><strong>Potential over-engineering:</strong> Applied dogmatically, it can lead to unnecessary complexity for simple problems.</li><li><strong>Performance overhead:</strong> Additional indirection may introduce minor performance costs (usually negligible).</li><li><strong>Learning curve:</strong> Team members must understand the pattern to work effectively with the code.</li></ul><p>The key is judicious application: use this topic where the benefits outweigh the costs, typically in code that will be maintained and evolved over time.</p>
-          </div>
-        </section>
-        
-        <section class="kb-section">
-          <h2 class="kb-section-title">When NOT to Use It</h2>
-          <div class="kb-section-content">
-            <p><strong>Fail Fast</strong> should NOT be applied when:</p><ul><li><strong>Simple scripts or one-off tools:</strong> For throwaway code, the overhead isn't justified.</li><li><strong>Performance-critical sections:</strong> In hot paths where every cycle counts, simplicity may trump design purity.</li><li><strong>Proof-of-concept work:</strong> When validating an idea quickly, premature optimization of design slows learning.</li><li><strong>Team unfamiliarity:</strong> If the team doesn't understand the topic, it creates confusion rather than clarity.</li><li><strong>Over-engineering risk:</strong> Don't create abstractions for hypothetical future requirements (violates YAGNI).</li></ul><p>Remember: design principles serve you, not vice versa. Apply them thoughtfully based on context.</p>
-          </div>
-        </section>
-        
-        <section class="kb-section">
-          <h2 class="kb-section-title">Relationships</h2>
-          <div class="kb-section-content">
-            <p>How this concept interacts with others in the knowledge base:</p>
-            <div class="kb-relationships">
-        <a href="yagni.html" class="kb-relationship">YAGNI</a>
-        <a href="information-hiding.html" class="kb-relationship">Information Hiding</a>
-        <a href="encapsulation.html" class="kb-relationship">Encapsulation</a>
-        <a href="high-cohesion.html" class="kb-relationship">High Cohesion</a>
-        <a href="low-coupling.html" class="kb-relationship">Low Coupling</a>
-            </div>
-          </div>
-        </section>
-        
-        <section class="kb-takeaways">
-          <h4>Key Takeaways</h4>
+        <section class="topic-section">
+          <h2>Key Concepts</h2>
           <ul>
-            <li>Fail Fast helps create code that is easier to understand, test, and maintain.</li><li>Apply this principle consistently in production code, but be pragmatic about simple scripts.</li><li>The benefit compounds over time as the codebase evolves.</li><li>Balance strict adherence with practical considerations like team knowledge and deadlines.</li><li>This principle works best in combination with others, not in isolation.</li>
+            <li>Separation of concerns</li>
+            <li>Abstraction boundaries</li>
+            <li>Composability</li>
+            <li>Explicit over implicit</li>
           </ul>
         </section>
         
-        <nav class="kb-page-nav">
-          <div>
-            <a href="single-source-of-truth.html">← Single Source of Truth</a>
-          </div>
-          <div>
-            <a href="least-astonishment.html">Least Astonishment →</a>
-          </div>
-        </nav>
-      </article>
+        <section class="topic-section">
+          <h2>C++ Example</h2>
+<pre><code>// Apply Fail Fast in your C++ code
+// Focus on clean abstractions and maintainable design
+class Example {
+public:
+    void apply() { /* Implementation */ }
+};</code></pre>
+        </section>
+        
+        <section class="topic-section">
+          <h2>Trade-offs</h2>
+          <p>Consider complexity, performance overhead, learning curve, and over-engineering risks.</p>
+        </section>
+        
+        <section class="topic-section">
+          <h2>Relationships</h2>
+          <div class="relationships-grid"><a href="srp-single-responsibility.html" class="relationship-link">SRP — Single Responsibility</a>
+<a href="ocp-openclosed.html" class="relationship-link">OCP — Open/Closed</a>
+<a href="lsp-liskov-substitution.html" class="relationship-link">LSP — Liskov Substitution</a>
+<a href="isp-interface-segregation.html" class="relationship-link">ISP — Interface Segregation</a>
+<a href="dip-dependency-inversion.html" class="relationship-link">DIP — Dependency Inversion</a>
+<a href="dry-dont-repeat-yourself.html" class="relationship-link">DRY — Don't Repeat Yourself</a>
+</div>
+        </section>
+        
+        <section class="topic-section takeaways">
+          <h2>Key Takeaways</h2>
+          <ul>
+            <li>Focus on single responsibilities</li>
+            <li>Program to interfaces</li>
+            <li>Favor composition</li>
+            <li>Design for change</li>
+          </ul>
+        </section>
+      </div>
     </main>
   </div>
-  <button id="kbThemeToggle" class="kb-theme-toggle" aria-label="Toggle dark mode">☀️</button>
   <script src="../assets/app.js"></script>
 </body>
 </html>

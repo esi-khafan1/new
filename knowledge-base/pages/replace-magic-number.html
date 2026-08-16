@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replace Magic Number — Knowledge Base</title>
+  <meta name="description" content="A specific method for improving code quality.">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="kb-container">
+    <nav class="kb-sidebar">
+      <div class="kb-logo">~<span>nabi</span>.dev KB</div>
+      <input type="text" id="kbSearch" class="kb-search" placeholder="Search topics... (press /)">
+      <ul class="kb-nav">
+        <li class="kb-nav-item"><a href="../index.html#part1" class="kb-nav-link">Part 1: Foundations</a><span class="kb-nav-count">48</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part2" class="kb-nav-link">Part 2: Modularity & Design</a><span class="kb-nav-count">31</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part3" class="kb-nav-link">Part 3: Application Architecture</a><span class="kb-nav-count">40</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part4" class="kb-nav-link">Part 4: Performance & Reliability</a><span class="kb-nav-count">36</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part5" class="kb-nav-link">Part 5: Domain, Distributed & Leadership</a><span class="kb-nav-count">43</span></li>
+        <li class="kb-nav-item"><a href="../index.html#part6" class="kb-nav-link">Part 6: Cross-Cutting Tracks</a><span class="kb-nav-count">136</span></li>
+      </ul>
+      <div class="theme-toggle"><button id="themeToggle" class="theme-btn">🌙 Dark Mode</button></div>
+    </nav>
+    <main class="kb-main">
+      <div class="topic-container">
+        <header class="topic-header">
+          <div class="topic-breadcrumb"><a href="../index.html">← Back to Index</a> / Part 6: Cross-Cutting Tracks</div>
+          <h1 class="topic-title">Replace Magic Number</h1>
+          <div class="topic-meta">
+            <span class="topic-part">Part 6: Cross-Cutting Tracks</span>
+            <span class="topic-type-badge technique">technique</span>
+          </div>
+          <nav class="topic-nav"><a href="introduce-parameter-object.html" class="topic-nav-btn">← Previous</a><a href="decompose-conditional.html" class="topic-nav-btn">Next →</a></nav>
+        </header>
+        
+        <section class="topic-section">
+          <h2>Definition</h2>
+          <p><strong>Replace Magic Number</strong> is a specific method for improving code quality.</p>
+        </section>
+        
+        <section class="topic-section">
+          <h2>The Problem It Solves</h2>
+          <p>Without this technique, developers face challenges with tight coupling, code duplication, rigidity, poor testability, and unclear responsibilities.</p>
+        </section>
+        
+        <section class="topic-section">
+          <h2>Key Concepts</h2>
+          <ul>
+            <li>Separation of concerns</li>
+            <li>Abstraction boundaries</li>
+            <li>Composability</li>
+            <li>Explicit over implicit</li>
+          </ul>
+        </section>
+        
+        <section class="topic-section">
+          <h2>C++ Example</h2>
+<pre><code>// Apply Replace Magic Number in your C++ code
+// Focus on clean abstractions and maintainable design
+class Example {
+public:
+    void apply() { /* Implementation */ }
+};</code></pre>
+        </section>
+        
+        <section class="topic-section">
+          <h2>Trade-offs</h2>
+          <p>Consider complexity, performance overhead, learning curve, and over-engineering risks.</p>
+        </section>
+        
+        <section class="topic-section">
+          <h2>Relationships</h2>
+          <div class="relationships-grid"><a href="extract-method.html" class="relationship-link">Extract Method</a>
+<a href="extract-class.html" class="relationship-link">Extract Class</a>
+<a href="inline-method-variable.html" class="relationship-link">Inline Method / Variable</a>
+<a href="move-method-field.html" class="relationship-link">Move Method / Field</a>
+<a href="rename-for-intent.html" class="relationship-link">Rename for Intent</a>
+<a href="replace-conditional-with-polymorphism.html" class="relationship-link">Replace Conditional with Polymorphism</a>
+</div>
+        </section>
+        
+        <section class="topic-section takeaways">
+          <h2>Key Takeaways</h2>
+          <ul>
+            <li>Focus on single responsibilities</li>
+            <li>Program to interfaces</li>
+            <li>Favor composition</li>
+            <li>Design for change</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
