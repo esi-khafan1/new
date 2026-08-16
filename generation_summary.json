@@ -1,0 +1,36 @@
+{
+  "total_parts": 6,
+  "total_pages": 48,
+  "parts": [
+    {
+      "order": 1,
+      "title": "Foundations",
+      "item_count": 48
+    },
+    {
+      "order": 2,
+      "title": "Modularity & Design",
+      "item_count": 0
+    },
+    {
+      "order": 3,
+      "title": "Application Architecture",
+      "item_count": 0
+    },
+    {
+      "order": 4,
+      "title": "Performance & Reliability",
+      "item_count": 0
+    },
+    {
+      "order": 5,
+      "title": "Domain, Distributed & Leadership",
+      "item_count": 0
+    },
+    {
+      "order": 6,
+      "title": "Cross-Cutting Tracks",
+      "item_count": 0
+    }
+  ]
+}

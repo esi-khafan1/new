@@ -1,0 +1,342 @@
+{
+  "parts": [
+    {
+      "order": 1,
+      "orderText": "01",
+      "title": "Foundations",
+      "topicsCount": "",
+      "description": "Core principles & the GoF object-oriented patterns",
+      "items": [
+        {
+          "name": "SRP \u2014 Single Responsibility",
+          "type": "principle",
+          "source_text": "SRP \u2014 Single Responsibility",
+          "source_url": ""
+        },
+        {
+          "name": "OCP \u2014 Open/Closed",
+          "type": "principle",
+          "source_text": "OCP \u2014 Open/Closed",
+          "source_url": ""
+        },
+        {
+          "name": "LSP \u2014 Liskov Substitution",
+          "type": "principle",
+          "source_text": "LSP \u2014 Liskov Substitution",
+          "source_url": ""
+        },
+        {
+          "name": "ISP \u2014 Interface Segregation",
+          "type": "principle",
+          "source_text": "ISP \u2014 Interface Segregation",
+          "source_url": ""
+        },
+        {
+          "name": "DIP \u2014 Dependency Inversion",
+          "type": "principle",
+          "source_text": "DIP \u2014 Dependency Inversion",
+          "source_url": ""
+        },
+        {
+          "name": "DRY \u2014 Don\u2019t Repeat Yourself",
+          "type": "principle",
+          "source_text": "DRY \u2014 Don\u2019t Repeat Yourself",
+          "source_url": ""
+        },
+        {
+          "name": "KISS \u2014 Keep It Simple",
+          "type": "principle",
+          "source_text": "KISS \u2014 Keep It Simple",
+          "source_url": ""
+        },
+        {
+          "name": "YAGNI",
+          "type": "topic",
+          "source_text": "YAGNI",
+          "source_url": ""
+        },
+        {
+          "name": "CQS \u2014 Command\u2013Query Separation",
+          "type": "principle",
+          "source_text": "CQS \u2014 Command\u2013Query Separation",
+          "source_url": ""
+        },
+        {
+          "name": "Information Hiding",
+          "type": "topic",
+          "source_text": "Information Hiding",
+          "source_url": ""
+        },
+        {
+          "name": "Encapsulation",
+          "type": "topic",
+          "source_text": "Encapsulation",
+          "source_url": ""
+        },
+        {
+          "name": "High Cohesion",
+          "type": "topic",
+          "source_text": "High Cohesion",
+          "source_url": ""
+        },
+        {
+          "name": "Low Coupling",
+          "type": "topic",
+          "source_text": "Low Coupling",
+          "source_url": ""
+        },
+        {
+          "name": "Composition over Inheritance",
+          "type": "topic",
+          "source_text": "Composition over Inheritance",
+          "source_url": ""
+        },
+        {
+          "name": "Law of Demeter",
+          "type": "topic",
+          "source_text": "Law of Demeter",
+          "source_url": ""
+        },
+        {
+          "name": "Separation of Concerns",
+          "type": "topic",
+          "source_text": "Separation of Concerns",
+          "source_url": ""
+        },
+        {
+          "name": "Single Source of Truth",
+          "type": "topic",
+          "source_text": "Single Source of Truth",
+          "source_url": ""
+        },
+        {
+          "name": "Fail Fast",
+          "type": "topic",
+          "source_text": "Fail Fast",
+          "source_url": ""
+        },
+        {
+          "name": "Least Astonishment",
+          "type": "topic",
+          "source_text": "Least Astonishment",
+          "source_url": ""
+        },
+        {
+          "name": "Explicit over Implicit",
+          "type": "topic",
+          "source_text": "Explicit over Implicit",
+          "source_url": ""
+        },
+        {
+          "name": "Tell, Don\u2019t Ask",
+          "type": "topic",
+          "source_text": "Tell, Don\u2019t Ask",
+          "source_url": ""
+        },
+        {
+          "name": "Program to an Interface",
+          "type": "topic",
+          "source_text": "Program to an Interface",
+          "source_url": ""
+        },
+        {
+          "name": "Factory Method",
+          "type": "pattern",
+          "source_text": "Factory Method",
+          "source_url": ""
+        },
+        {
+          "name": "Abstract Factory",
+          "type": "pattern",
+          "source_text": "Abstract Factory",
+          "source_url": ""
+        },
+        {
+          "name": "Builder",
+          "type": "pattern",
+          "source_text": "Builder",
+          "source_url": ""
+        },
+        {
+          "name": "Prototype",
+          "type": "pattern",
+          "source_text": "Prototype",
+          "source_url": ""
+        },
+        {
+          "name": "Singleton",
+          "type": "pattern",
+          "source_text": "Singleton",
+          "source_url": ""
+        },
+        {
+          "name": "Static Factory Method",
+          "type": "pattern",
+          "source_text": "Static Factory Method",
+          "source_url": ""
+        },
+        {
+          "name": "Adapter",
+          "type": "pattern",
+          "source_text": "Adapter",
+          "source_url": ""
+        },
+        {
+          "name": "Bridge",
+          "type": "pattern",
+          "source_text": "Bridge",
+          "source_url": ""
+        },
+        {
+          "name": "Composite",
+          "type": "pattern",
+          "source_text": "Composite",
+          "source_url": ""
+        },
+        {
+          "name": "Decorator",
+          "type": "pattern",
+          "source_text": "Decorator",
+          "source_url": ""
+        },
+        {
+          "name": "Facade",
+          "type": "pattern",
+          "source_text": "Facade",
+          "source_url": ""
+        },
+        {
+          "name": "Flyweight",
+          "type": "pattern",
+          "source_text": "Flyweight",
+          "source_url": ""
+        },
+        {
+          "name": "Proxy",
+          "type": "pattern",
+          "source_text": "Proxy",
+          "source_url": ""
+        },
+        {
+          "name": "Chain of Responsibility",
+          "type": "pattern",
+          "source_text": "Chain of Responsibility",
+          "source_url": ""
+        },
+        {
+          "name": "Command",
+          "type": "pattern",
+          "source_text": "Command",
+          "source_url": ""
+        },
+        {
+          "name": "Interpreter",
+          "type": "pattern",
+          "source_text": "Interpreter",
+          "source_url": ""
+        },
+        {
+          "name": "Iterator",
+          "type": "pattern",
+          "source_text": "Iterator",
+          "source_url": ""
+        },
+        {
+          "name": "Mediator",
+          "type": "pattern",
+          "source_text": "Mediator",
+          "source_url": ""
+        },
+        {
+          "name": "Memento",
+          "type": "pattern",
+          "source_text": "Memento",
+          "source_url": ""
+        },
+        {
+          "name": "Observer",
+          "type": "pattern",
+          "source_text": "Observer",
+          "source_url": ""
+        },
+        {
+          "name": "State",
+          "type": "pattern",
+          "source_text": "State",
+          "source_url": ""
+        },
+        {
+          "name": "Strategy",
+          "type": "pattern",
+          "source_text": "Strategy",
+          "source_url": ""
+        },
+        {
+          "name": "Template Method",
+          "type": "pattern",
+          "source_text": "Template Method",
+          "source_url": ""
+        },
+        {
+          "name": "Visitor",
+          "type": "pattern",
+          "source_text": "Visitor",
+          "source_url": ""
+        },
+        {
+          "name": "Null Object",
+          "type": "pattern",
+          "source_text": "Null Object",
+          "source_url": ""
+        },
+        {
+          "name": "Value Object",
+          "type": "topic",
+          "source_text": "Value Object",
+          "source_url": ""
+        }
+      ],
+      "detailedTitle": "Foundations"
+    },
+    {
+      "order": 2,
+      "orderText": "02",
+      "title": "Modularity & Design",
+      "topicsCount": "",
+      "description": "",
+      "items": []
+    },
+    {
+      "order": 3,
+      "orderText": "03",
+      "title": "Application Architecture",
+      "topicsCount": "",
+      "description": "",
+      "items": []
+    },
+    {
+      "order": 4,
+      "orderText": "04",
+      "title": "Performance & Reliability",
+      "topicsCount": "",
+      "description": "",
+      "items": []
+    },
+    {
+      "order": 5,
+      "orderText": "05",
+      "title": "Domain, Distributed & Leadership",
+      "topicsCount": "",
+      "description": "",
+      "items": []
+    },
+    {
+      "order": 6,
+      "orderText": "\u2726",
+      "title": "Cross-Cutting Tracks",
+      "topicsCount": "",
+      "description": "",
+      "items": []
+    }
+  ]
+}
