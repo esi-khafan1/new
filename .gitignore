@@ -1,0 +1,11 @@
+```
+# Dependencies
+node_modules/
+
+# Compressed files
+*.zip
+
+# Package lock
+package-lock.json
+
+```
