@@ -1,0 +1,1716 @@
+{
+  "parts": [
+    {
+      "order": 1,
+      "title": "Foundations",
+      "description": "Core principles & the GoF object-oriented patterns",
+      "items": [
+        {
+          "name": "SRP \u2014 Single Responsibility",
+          "type": "principle",
+          "slug": "srp-single-responsibility"
+        },
+        {
+          "name": "OCP \u2014 Open/Closed",
+          "type": "principle",
+          "slug": "ocp-openclosed"
+        },
+        {
+          "name": "LSP \u2014 Liskov Substitution",
+          "type": "principle",
+          "slug": "lsp-liskov-substitution"
+        },
+        {
+          "name": "ISP \u2014 Interface Segregation",
+          "type": "principle",
+          "slug": "isp-interface-segregation"
+        },
+        {
+          "name": "DIP \u2014 Dependency Inversion",
+          "type": "principle",
+          "slug": "dip-dependency-inversion"
+        },
+        {
+          "name": "DRY \u2014 Don't Repeat Yourself",
+          "type": "principle",
+          "slug": "dry-dont-repeat-yourself"
+        },
+        {
+          "name": "KISS \u2014 Keep It Simple",
+          "type": "principle",
+          "slug": "kiss-keep-it-simple"
+        },
+        {
+          "name": "YAGNI",
+          "type": "principle",
+          "slug": "yagni"
+        },
+        {
+          "name": "CQS \u2014 Command\u2013Query Separation",
+          "type": "principle",
+          "slug": "cqs-command-query-separation"
+        },
+        {
+          "name": "Information Hiding",
+          "type": "principle",
+          "slug": "information-hiding"
+        },
+        {
+          "name": "Encapsulation",
+          "type": "principle",
+          "slug": "encapsulation"
+        },
+        {
+          "name": "High Cohesion",
+          "type": "principle",
+          "slug": "high-cohesion"
+        },
+        {
+          "name": "Low Coupling",
+          "type": "principle",
+          "slug": "low-coupling"
+        },
+        {
+          "name": "Composition over Inheritance",
+          "type": "principle",
+          "slug": "composition-over-inheritance"
+        },
+        {
+          "name": "Law of Demeter",
+          "type": "principle",
+          "slug": "law-of-demeter"
+        },
+        {
+          "name": "Separation of Concerns",
+          "type": "principle",
+          "slug": "separation-of-concerns"
+        },
+        {
+          "name": "Single Source of Truth",
+          "type": "principle",
+          "slug": "single-source-of-truth"
+        },
+        {
+          "name": "Fail Fast",
+          "type": "principle",
+          "slug": "fail-fast"
+        },
+        {
+          "name": "Least Astonishment",
+          "type": "principle",
+          "slug": "least-astonishment"
+        },
+        {
+          "name": "Explicit over Implicit",
+          "type": "principle",
+          "slug": "explicit-over-implicit"
+        },
+        {
+          "name": "Tell, Don't Ask",
+          "type": "principle",
+          "slug": "tell-dont-ask"
+        },
+        {
+          "name": "Program to an Interface",
+          "type": "principle",
+          "slug": "program-to-an-interface"
+        },
+        {
+          "name": "Factory Method",
+          "type": "pattern",
+          "slug": "factory-method"
+        },
+        {
+          "name": "Abstract Factory",
+          "type": "pattern",
+          "slug": "abstract-factory"
+        },
+        {
+          "name": "Builder",
+          "type": "pattern",
+          "slug": "builder"
+        },
+        {
+          "name": "Prototype",
+          "type": "pattern",
+          "slug": "prototype"
+        },
+        {
+          "name": "Singleton",
+          "type": "pattern",
+          "slug": "singleton"
+        },
+        {
+          "name": "Static Factory Method",
+          "type": "pattern",
+          "slug": "static-factory-method"
+        },
+        {
+          "name": "Adapter",
+          "type": "pattern",
+          "slug": "adapter"
+        },
+        {
+          "name": "Bridge",
+          "type": "pattern",
+          "slug": "bridge"
+        },
+        {
+          "name": "Composite",
+          "type": "pattern",
+          "slug": "composite"
+        },
+        {
+          "name": "Decorator",
+          "type": "pattern",
+          "slug": "decorator"
+        },
+        {
+          "name": "Facade",
+          "type": "pattern",
+          "slug": "facade"
+        },
+        {
+          "name": "Flyweight",
+          "type": "pattern",
+          "slug": "flyweight"
+        },
+        {
+          "name": "Proxy",
+          "type": "pattern",
+          "slug": "proxy"
+        },
+        {
+          "name": "Chain of Responsibility",
+          "type": "pattern",
+          "slug": "chain-of-responsibility"
+        },
+        {
+          "name": "Command",
+          "type": "pattern",
+          "slug": "command"
+        },
+        {
+          "name": "Interpreter",
+          "type": "pattern",
+          "slug": "interpreter"
+        },
+        {
+          "name": "Iterator",
+          "type": "pattern",
+          "slug": "iterator"
+        },
+        {
+          "name": "Mediator",
+          "type": "pattern",
+          "slug": "mediator"
+        },
+        {
+          "name": "Memento",
+          "type": "pattern",
+          "slug": "memento"
+        },
+        {
+          "name": "Observer",
+          "type": "pattern",
+          "slug": "observer"
+        },
+        {
+          "name": "State",
+          "type": "pattern",
+          "slug": "state"
+        },
+        {
+          "name": "Strategy",
+          "type": "pattern",
+          "slug": "strategy"
+        },
+        {
+          "name": "Template Method",
+          "type": "pattern",
+          "slug": "template-method"
+        },
+        {
+          "name": "Visitor",
+          "type": "pattern",
+          "slug": "visitor"
+        },
+        {
+          "name": "Null Object",
+          "type": "pattern",
+          "slug": "null-object"
+        },
+        {
+          "name": "Value Object",
+          "type": "pattern",
+          "slug": "value-object"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Modularity & Design",
+      "description": "Principles and patterns for modular, maintainable system design",
+      "items": [
+        {
+          "name": "REP \u2014 Reuse/Release Equivalence",
+          "type": "principle",
+          "slug": "rep-reuse-release-equivalence"
+        },
+        {
+          "name": "CCP \u2014 Common Closure",
+          "type": "principle",
+          "slug": "ccp-common-closure"
+        },
+        {
+          "name": "CRP \u2014 Common Reuse",
+          "type": "principle",
+          "slug": "crp-common-reuse"
+        },
+        {
+          "name": "ADP \u2014 Acyclic Dependencies",
+          "type": "principle",
+          "slug": "adp-acyclic-dependencies"
+        },
+        {
+          "name": "SDP \u2014 Stable Dependencies",
+          "type": "principle",
+          "slug": "sdp-stable-dependencies"
+        },
+        {
+          "name": "SAP \u2014 Stable Abstractions",
+          "type": "principle",
+          "slug": "sap-stable-abstractions"
+        },
+        {
+          "name": "Stable Core, Volatile Edges",
+          "type": "principle",
+          "slug": "stable-core-volatile-edges"
+        },
+        {
+          "name": "Immutability at Boundaries",
+          "type": "principle",
+          "slug": "immutability-at-boundaries"
+        },
+        {
+          "name": "Design for Testability",
+          "type": "principle",
+          "slug": "design-for-testability"
+        },
+        {
+          "name": "Make Illegal States Unrepresentable",
+          "type": "principle",
+          "slug": "make-illegal-states-unrepresentable"
+        },
+        {
+          "name": "Convention over Configuration",
+          "type": "principle",
+          "slug": "convention-over-configuration"
+        },
+        {
+          "name": "Boy Scout Rule",
+          "type": "principle",
+          "slug": "boy-scout-rule"
+        },
+        {
+          "name": "Least Privilege",
+          "type": "principle",
+          "slug": "least-privilege"
+        },
+        {
+          "name": "Hollywood Principle",
+          "type": "principle",
+          "slug": "hollywood-principle"
+        },
+        {
+          "name": "Robustness (Postel's Law)",
+          "type": "principle",
+          "slug": "robustness-postels-law"
+        },
+        {
+          "name": "Object Pool",
+          "type": "pattern",
+          "slug": "object-pool"
+        },
+        {
+          "name": "Lazy Initialization",
+          "type": "pattern",
+          "slug": "lazy-initialization"
+        },
+        {
+          "name": "Multiton",
+          "type": "pattern",
+          "slug": "multiton"
+        },
+        {
+          "name": "Registry",
+          "type": "pattern",
+          "slug": "registry"
+        },
+        {
+          "name": "Module Pattern",
+          "type": "pattern",
+          "slug": "module-pattern"
+        },
+        {
+          "name": "Dependency Injection",
+          "type": "pattern",
+          "slug": "dependency-injection"
+        },
+        {
+          "name": "Service Locator",
+          "type": "pattern",
+          "slug": "service-locator"
+        },
+        {
+          "name": "Marker Interface",
+          "type": "pattern",
+          "slug": "marker-interface"
+        },
+        {
+          "name": "Type Object",
+          "type": "pattern",
+          "slug": "type-object"
+        },
+        {
+          "name": "Extension Object",
+          "type": "pattern",
+          "slug": "extension-object"
+        },
+        {
+          "name": "Role Object",
+          "type": "pattern",
+          "slug": "role-object"
+        },
+        {
+          "name": "Fluent Interface",
+          "type": "pattern",
+          "slug": "fluent-interface"
+        },
+        {
+          "name": "Method Chaining",
+          "type": "pattern",
+          "slug": "method-chaining"
+        },
+        {
+          "name": "Pluggable Behavior",
+          "type": "pattern",
+          "slug": "pluggable-behavior"
+        },
+        {
+          "name": "Strategy + Factory",
+          "type": "pattern",
+          "slug": "strategy-plus-factory"
+        },
+        {
+          "name": "Observer + Event Aggregator",
+          "type": "pattern",
+          "slug": "observer-plus-event-aggregator"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Application Architecture",
+      "description": "Architectural patterns for building scalable applications",
+      "items": [
+        {
+          "name": "Hexagonal (Ports & Adapters)",
+          "type": "principle",
+          "slug": "hexagonal-ports-adapters"
+        },
+        {
+          "name": "Separate Domain from Infrastructure",
+          "type": "principle",
+          "slug": "separate-domain-from-infrastructure"
+        },
+        {
+          "name": "Persistence Ignorance",
+          "type": "principle",
+          "slug": "persistence-ignorance"
+        },
+        {
+          "name": "Dependency Rule (Clean Architecture)",
+          "type": "principle",
+          "slug": "dependency-rule-clean-architecture"
+        },
+        {
+          "name": "Clear Transaction Boundaries",
+          "type": "principle",
+          "slug": "clear-transaction-boundaries"
+        },
+        {
+          "name": "Error/Result Modeling",
+          "type": "principle",
+          "slug": "error-result-modeling"
+        },
+        {
+          "name": "Versioned Interfaces",
+          "type": "principle",
+          "slug": "versioned-interfaces"
+        },
+        {
+          "name": "DTO vs Domain Model",
+          "type": "principle",
+          "slug": "dto-vs-domain-model"
+        },
+        {
+          "name": "Idempotency for Commands",
+          "type": "principle",
+          "slug": "idempotency-for-commands"
+        },
+        {
+          "name": "Deterministic Core",
+          "type": "principle",
+          "slug": "deterministic-core"
+        },
+        {
+          "name": "Contract-First Design",
+          "type": "principle",
+          "slug": "contract-first-design"
+        },
+        {
+          "name": "Tolerant Reader",
+          "type": "principle",
+          "slug": "tolerant-reader"
+        },
+        {
+          "name": "Backwards Compatibility",
+          "type": "principle",
+          "slug": "backwards-compatibility"
+        },
+        {
+          "name": "Model the Domain, not the DB",
+          "type": "principle",
+          "slug": "model-the-domain-not-the-db"
+        },
+        {
+          "name": "Screaming Architecture",
+          "type": "principle",
+          "slug": "screaming-architecture"
+        },
+        {
+          "name": "Repository",
+          "type": "pattern",
+          "slug": "repository"
+        },
+        {
+          "name": "Unit of Work",
+          "type": "pattern",
+          "slug": "unit-of-work"
+        },
+        {
+          "name": "Data Mapper",
+          "type": "pattern",
+          "slug": "data-mapper"
+        },
+        {
+          "name": "Active Record",
+          "type": "pattern",
+          "slug": "active-record"
+        },
+        {
+          "name": "Identity Map",
+          "type": "pattern",
+          "slug": "identity-map"
+        },
+        {
+          "name": "Lazy Load",
+          "type": "pattern",
+          "slug": "lazy-load"
+        },
+        {
+          "name": "Specification",
+          "type": "pattern",
+          "slug": "specification"
+        },
+        {
+          "name": "Query Object",
+          "type": "pattern",
+          "slug": "query-object"
+        },
+        {
+          "name": "Mediator (Command/Query Bus)",
+          "type": "pattern",
+          "slug": "mediator-command-query-bus"
+        },
+        {
+          "name": "CQRS",
+          "type": "pattern",
+          "slug": "cqrs"
+        },
+        {
+          "name": "Domain Service",
+          "type": "pattern",
+          "slug": "domain-service"
+        },
+        {
+          "name": "Application Service",
+          "type": "pattern",
+          "slug": "application-service"
+        },
+        {
+          "name": "Gateway",
+          "type": "pattern",
+          "slug": "gateway"
+        },
+        {
+          "name": "Anti-Corruption Layer",
+          "type": "pattern",
+          "slug": "anti-corruption-layer"
+        },
+        {
+          "name": "Publisher\u2013Subscriber",
+          "type": "pattern",
+          "slug": "publisher-subscriber"
+        },
+        {
+          "name": "Message Channel",
+          "type": "pattern",
+          "slug": "message-channel"
+        },
+        {
+          "name": "Message Router",
+          "type": "pattern",
+          "slug": "message-router"
+        },
+        {
+          "name": "Content-Based Router",
+          "type": "pattern",
+          "slug": "content-based-router"
+        },
+        {
+          "name": "Message Translator",
+          "type": "pattern",
+          "slug": "message-translator"
+        },
+        {
+          "name": "Splitter / Aggregator",
+          "type": "pattern",
+          "slug": "splitter-aggregator"
+        },
+        {
+          "name": "Claim Check",
+          "type": "pattern",
+          "slug": "claim-check"
+        },
+        {
+          "name": "Dead Letter Channel",
+          "type": "pattern",
+          "slug": "dead-letter-channel"
+        },
+        {
+          "name": "Transactional Outbox",
+          "type": "pattern",
+          "slug": "transactional-outbox"
+        },
+        {
+          "name": "Backend for Frontend",
+          "type": "pattern",
+          "slug": "backend-for-frontend"
+        },
+        {
+          "name": "API Composition",
+          "type": "pattern",
+          "slug": "api-composition"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Performance & Reliability",
+      "description": "Patterns and principles for high-performance, reliable systems",
+      "items": [
+        {
+          "name": "Measure before Optimize",
+          "type": "principle",
+          "slug": "measure-before-optimize"
+        },
+        {
+          "name": "Performance Budgets",
+          "type": "principle",
+          "slug": "performance-budgets"
+        },
+        {
+          "name": "Locality of Reference",
+          "type": "principle",
+          "slug": "locality-of-reference"
+        },
+        {
+          "name": "Avoid Unnecessary Allocation",
+          "type": "principle",
+          "slug": "avoid-unnecessary-allocation"
+        },
+        {
+          "name": "Bounded Queues & Backpressure",
+          "type": "principle",
+          "slug": "bounded-queues-backpressure"
+        },
+        {
+          "name": "Time Semantics",
+          "type": "principle",
+          "slug": "time-semantics"
+        },
+        {
+          "name": "Resource Safety (RAII / defer)",
+          "type": "principle",
+          "slug": "resource-safety-raii-defer"
+        },
+        {
+          "name": "Predictable Degradation",
+          "type": "principle",
+          "slug": "predictable-degradation"
+        },
+        {
+          "name": "Cancellation & Timeout Propagation",
+          "type": "principle",
+          "slug": "cancellation-timeout-propagation"
+        },
+        {
+          "name": "Design for Failure",
+          "type": "principle",
+          "slug": "design-for-failure"
+        },
+        {
+          "name": "Let It Crash",
+          "type": "principle",
+          "slug": "let-it-crash"
+        },
+        {
+          "name": "Idempotency under Retry",
+          "type": "principle",
+          "slug": "idempotency-under-retry"
+        },
+        {
+          "name": "Cache-Aside",
+          "type": "pattern",
+          "slug": "cache-aside"
+        },
+        {
+          "name": "Read-Through Cache",
+          "type": "pattern",
+          "slug": "read-through-cache"
+        },
+        {
+          "name": "Write-Behind Cache",
+          "type": "pattern",
+          "slug": "write-behind-cache"
+        },
+        {
+          "name": "Write-Through Cache",
+          "type": "pattern",
+          "slug": "write-through-cache"
+        },
+        {
+          "name": "Memoization",
+          "type": "pattern",
+          "slug": "memoization"
+        },
+        {
+          "name": "Circuit Breaker",
+          "type": "pattern",
+          "slug": "circuit-breaker"
+        },
+        {
+          "name": "Retry with Backoff + Jitter",
+          "type": "pattern",
+          "slug": "retry-with-backoff-jitter"
+        },
+        {
+          "name": "Timeout Guard",
+          "type": "pattern",
+          "slug": "timeout-guard"
+        },
+        {
+          "name": "Bulkhead",
+          "type": "pattern",
+          "slug": "bulkhead"
+        },
+        {
+          "name": "Throttling / Rate Limiting",
+          "type": "pattern",
+          "slug": "throttling-rate-limiting"
+        },
+        {
+          "name": "Token Bucket",
+          "type": "pattern",
+          "slug": "token-bucket"
+        },
+        {
+          "name": "Leaky Bucket",
+          "type": "pattern",
+          "slug": "leaky-bucket"
+        },
+        {
+          "name": "Fallback",
+          "type": "pattern",
+          "slug": "fallback"
+        },
+        {
+          "name": "Load Shedding",
+          "type": "pattern",
+          "slug": "load-shedding"
+        },
+        {
+          "name": "Producer\u2013Consumer",
+          "type": "pattern",
+          "slug": "producer-consumer"
+        },
+        {
+          "name": "Thread Pool",
+          "type": "pattern",
+          "slug": "thread-pool"
+        },
+        {
+          "name": "Future / Promise",
+          "type": "pattern",
+          "slug": "future-promise"
+        },
+        {
+          "name": "Actor Model",
+          "type": "pattern",
+          "slug": "actor-model"
+        },
+        {
+          "name": "Pipeline / SEDA",
+          "type": "pattern",
+          "slug": "pipeline-seda"
+        },
+        {
+          "name": "Fan-out / Fan-in",
+          "type": "pattern",
+          "slug": "fan-out-fan-in"
+        },
+        {
+          "name": "Read-Write Lock",
+          "type": "pattern",
+          "slug": "read-write-lock"
+        },
+        {
+          "name": "Double-Checked Locking",
+          "type": "pattern",
+          "slug": "double-checked-locking"
+        },
+        {
+          "name": "Batching",
+          "type": "pattern",
+          "slug": "batching"
+        },
+        {
+          "name": "Debounce / Throttle",
+          "type": "pattern",
+          "slug": "debounce-throttle"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Domain, Distributed & Leadership",
+      "description": "DDD, distributed systems, and engineering leadership patterns",
+      "items": [
+        {
+          "name": "Ubiquitous Language",
+          "type": "principle",
+          "slug": "ubiquitous-language"
+        },
+        {
+          "name": "Bounded Contexts",
+          "type": "principle",
+          "slug": "bounded-contexts"
+        },
+        {
+          "name": "Consistency Boundaries & Invariants",
+          "type": "principle",
+          "slug": "consistency-boundaries-invariants"
+        },
+        {
+          "name": "Invariants-First Thinking",
+          "type": "principle",
+          "slug": "invariants-first-thinking"
+        },
+        {
+          "name": "Policy as Code",
+          "type": "principle",
+          "slug": "policy-as-code"
+        },
+        {
+          "name": "Evolutionary Architecture",
+          "type": "principle",
+          "slug": "evolutionary-architecture"
+        },
+        {
+          "name": "Trade-off Thinking",
+          "type": "principle",
+          "slug": "trade-off-thinking"
+        },
+        {
+          "name": "Technical Debt as Portfolio",
+          "type": "principle",
+          "slug": "technical-debt-as-portfolio"
+        },
+        {
+          "name": "API Design Principles",
+          "type": "principle",
+          "slug": "api-design-principles"
+        },
+        {
+          "name": "Continuous Integration (real)",
+          "type": "principle",
+          "slug": "continuous-integration-real"
+        },
+        {
+          "name": "Small Batch Size",
+          "type": "principle",
+          "slug": "small-batch-size"
+        },
+        {
+          "name": "Shift-Left",
+          "type": "principle",
+          "slug": "shift-left"
+        },
+        {
+          "name": "Observability by Design",
+          "type": "principle",
+          "slug": "observability-by-design"
+        },
+        {
+          "name": "Reversible Decisions First",
+          "type": "principle",
+          "slug": "reversible-decisions-first"
+        },
+        {
+          "name": "Blameless Postmortem",
+          "type": "principle",
+          "slug": "blameless-postmortem"
+        },
+        {
+          "name": "Automate Everything Repetitive",
+          "type": "principle",
+          "slug": "automate-everything-repetitive"
+        },
+        {
+          "name": "Infrastructure as Code mindset",
+          "type": "principle",
+          "slug": "infrastructure-as-code-mindset"
+        },
+        {
+          "name": "Aggregate",
+          "type": "pattern",
+          "slug": "aggregate"
+        },
+        {
+          "name": "Entity",
+          "type": "pattern",
+          "slug": "entity"
+        },
+        {
+          "name": "Domain Events",
+          "type": "pattern",
+          "slug": "domain-events"
+        },
+        {
+          "name": "Domain Service (DDD)",
+          "type": "pattern",
+          "slug": "domain-service-ddd"
+        },
+        {
+          "name": "Factory (DDD)",
+          "type": "pattern",
+          "slug": "factory-ddd"
+        },
+        {
+          "name": "Repository (DDD)",
+          "type": "pattern",
+          "slug": "repository-ddd"
+        },
+        {
+          "name": "Policy-based Design",
+          "type": "pattern",
+          "slug": "policy-based-design"
+        },
+        {
+          "name": "Event Sourcing",
+          "type": "pattern",
+          "slug": "event-sourcing"
+        },
+        {
+          "name": "Snapshotting",
+          "type": "pattern",
+          "slug": "snapshotting"
+        },
+        {
+          "name": "Saga (Orchestration)",
+          "type": "pattern",
+          "slug": "saga-orchestration"
+        },
+        {
+          "name": "Saga (Choreography)",
+          "type": "pattern",
+          "slug": "saga-choreography"
+        },
+        {
+          "name": "Process Manager",
+          "type": "pattern",
+          "slug": "process-manager"
+        },
+        {
+          "name": "Published Language",
+          "type": "pattern",
+          "slug": "published-language"
+        },
+        {
+          "name": "Strangler Fig",
+          "type": "pattern",
+          "slug": "strangler-fig"
+        },
+        {
+          "name": "Branch by Abstraction",
+          "type": "pattern",
+          "slug": "branch-by-abstraction"
+        },
+        {
+          "name": "Parallel Run",
+          "type": "pattern",
+          "slug": "parallel-run"
+        },
+        {
+          "name": "Idempotent Consumer",
+          "type": "pattern",
+          "slug": "idempotent-consumer"
+        },
+        {
+          "name": "Inbox Pattern",
+          "type": "pattern",
+          "slug": "inbox-pattern"
+        },
+        {
+          "name": "Sidecar",
+          "type": "pattern",
+          "slug": "sidecar"
+        },
+        {
+          "name": "Ambassador",
+          "type": "pattern",
+          "slug": "ambassador"
+        },
+        {
+          "name": "Service Discovery",
+          "type": "pattern",
+          "slug": "service-discovery"
+        },
+        {
+          "name": "Leader Election",
+          "type": "pattern",
+          "slug": "leader-election"
+        },
+        {
+          "name": "Sharding / Partitioning",
+          "type": "pattern",
+          "slug": "sharding-partitioning"
+        },
+        {
+          "name": "Consistent Hashing",
+          "type": "pattern",
+          "slug": "consistent-hashing"
+        },
+        {
+          "name": "Event-Carried State Transfer",
+          "type": "pattern",
+          "slug": "event-carried-state-transfer"
+        },
+        {
+          "name": "Materialized View",
+          "type": "pattern",
+          "slug": "materialized-view"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Cross-Cutting Tracks",
+      "description": "Security, distributed systems, data, testing, concurrency, frontend, refactoring, and code quality",
+      "items": [
+        {
+          "name": "Defense in Depth",
+          "type": "principle",
+          "slug": "defense-in-depth"
+        },
+        {
+          "name": "Secure by Default",
+          "type": "principle",
+          "slug": "secure-by-default"
+        },
+        {
+          "name": "Zero Trust",
+          "type": "principle",
+          "slug": "zero-trust"
+        },
+        {
+          "name": "Fail Securely",
+          "type": "principle",
+          "slug": "fail-securely"
+        },
+        {
+          "name": "Complete Mediation",
+          "type": "principle",
+          "slug": "complete-mediation"
+        },
+        {
+          "name": "Economy of Mechanism",
+          "type": "principle",
+          "slug": "economy-of-mechanism"
+        },
+        {
+          "name": "Open Design (Kerckhoffs)",
+          "type": "principle",
+          "slug": "open-design-kerckhoffs"
+        },
+        {
+          "name": "Separation of Duties",
+          "type": "principle",
+          "slug": "separation-of-duties"
+        },
+        {
+          "name": "CAP Theorem",
+          "type": "principle",
+          "slug": "cap-theorem"
+        },
+        {
+          "name": "PACELC",
+          "type": "principle",
+          "slug": "pacelc"
+        },
+        {
+          "name": "ACID vs BASE",
+          "type": "principle",
+          "slug": "acid-vs-base"
+        },
+        {
+          "name": "Eventual Consistency",
+          "type": "principle",
+          "slug": "eventual-consistency"
+        },
+        {
+          "name": "Idempotency as Default",
+          "type": "principle",
+          "slug": "idempotency-as-default"
+        },
+        {
+          "name": "End-to-End Argument",
+          "type": "principle",
+          "slug": "end-to-end-argument"
+        },
+        {
+          "name": "Conway's Law",
+          "type": "principle",
+          "slug": "conways-law"
+        },
+        {
+          "name": "Inverse Conway Maneuver",
+          "type": "principle",
+          "slug": "inverse-conway-maneuver"
+        },
+        {
+          "name": "You Build It, You Run It",
+          "type": "principle",
+          "slug": "you-build-it-you-run-it"
+        },
+        {
+          "name": "DORA Metrics",
+          "type": "principle",
+          "slug": "dora-metrics"
+        },
+        {
+          "name": "Definition of Done",
+          "type": "principle",
+          "slug": "definition-of-done"
+        },
+        {
+          "name": "Sustainable Pace",
+          "type": "principle",
+          "slug": "sustainable-pace"
+        },
+        {
+          "name": "Trunk-Based Development",
+          "type": "principle",
+          "slug": "trunk-based-development"
+        },
+        {
+          "name": "Feature Toggles over Branches",
+          "type": "principle",
+          "slug": "feature-toggles-over-branches"
+        },
+        {
+          "name": "Optimize for Readability",
+          "type": "principle",
+          "slug": "optimize-for-readability"
+        },
+        {
+          "name": "Code for the Maintainer",
+          "type": "principle",
+          "slug": "code-for-the-maintainer"
+        },
+        {
+          "name": "Comment Why, not What",
+          "type": "principle",
+          "slug": "comment-why-not-what"
+        },
+        {
+          "name": "Naming as Design",
+          "type": "principle",
+          "slug": "naming-as-design"
+        },
+        {
+          "name": "API Gateway",
+          "type": "pattern",
+          "slug": "api-gateway"
+        },
+        {
+          "name": "Gateway Aggregation",
+          "type": "pattern",
+          "slug": "gateway-aggregation"
+        },
+        {
+          "name": "Gateway Offloading",
+          "type": "pattern",
+          "slug": "gateway-offloading"
+        },
+        {
+          "name": "Competing Consumers",
+          "type": "pattern",
+          "slug": "competing-consumers"
+        },
+        {
+          "name": "Pipes and Filters",
+          "type": "pattern",
+          "slug": "pipes-and-filters"
+        },
+        {
+          "name": "Queue-Based Load Leveling",
+          "type": "pattern",
+          "slug": "queue-based-load-leveling"
+        },
+        {
+          "name": "Priority Queue",
+          "type": "pattern",
+          "slug": "priority-queue"
+        },
+        {
+          "name": "Scheduler\u2013Agent\u2013Supervisor",
+          "type": "pattern",
+          "slug": "scheduler-agent-supervisor"
+        },
+        {
+          "name": "Compensating Transaction",
+          "type": "pattern",
+          "slug": "compensating-transaction"
+        },
+        {
+          "name": "Health Endpoint Monitoring",
+          "type": "pattern",
+          "slug": "health-endpoint-monitoring"
+        },
+        {
+          "name": "External Configuration Store",
+          "type": "pattern",
+          "slug": "external-configuration-store"
+        },
+        {
+          "name": "Federated Identity",
+          "type": "pattern",
+          "slug": "federated-identity"
+        },
+        {
+          "name": "Gatekeeper",
+          "type": "pattern",
+          "slug": "gatekeeper"
+        },
+        {
+          "name": "Valet Key",
+          "type": "pattern",
+          "slug": "valet-key"
+        },
+        {
+          "name": "Index Table",
+          "type": "pattern",
+          "slug": "index-table"
+        },
+        {
+          "name": "Deployment Stamps",
+          "type": "pattern",
+          "slug": "deployment-stamps"
+        },
+        {
+          "name": "Geode",
+          "type": "pattern",
+          "slug": "geode"
+        },
+        {
+          "name": "Two-Phase Commit",
+          "type": "pattern",
+          "slug": "two-phase-commit"
+        },
+        {
+          "name": "Three-Phase Commit",
+          "type": "pattern",
+          "slug": "three-phase-commit"
+        },
+        {
+          "name": "Quorum",
+          "type": "pattern",
+          "slug": "quorum"
+        },
+        {
+          "name": "Change Data Capture",
+          "type": "pattern",
+          "slug": "change-data-capture"
+        },
+        {
+          "name": "Cell-Based Architecture",
+          "type": "pattern",
+          "slug": "cell-based-architecture"
+        },
+        {
+          "name": "Write-Ahead Log",
+          "type": "pattern",
+          "slug": "write-ahead-log"
+        },
+        {
+          "name": "LSM-Tree",
+          "type": "pattern",
+          "slug": "lsm-tree"
+        },
+        {
+          "name": "B-Tree / B+Tree Indexing",
+          "type": "pattern",
+          "slug": "btree-bplus-tree-indexing"
+        },
+        {
+          "name": "Bloom Filter",
+          "type": "pattern",
+          "slug": "bloom-filter"
+        },
+        {
+          "name": "HyperLogLog",
+          "type": "pattern",
+          "slug": "hyperloglog"
+        },
+        {
+          "name": "Count-Min Sketch",
+          "type": "pattern",
+          "slug": "count-min-sketch"
+        },
+        {
+          "name": "Merkle Tree",
+          "type": "pattern",
+          "slug": "merkle-tree"
+        },
+        {
+          "name": "Vector Clock",
+          "type": "pattern",
+          "slug": "vector-clock"
+        },
+        {
+          "name": "CRDT",
+          "type": "pattern",
+          "slug": "crdt"
+        },
+        {
+          "name": "Lambda Architecture",
+          "type": "pattern",
+          "slug": "lambda-architecture"
+        },
+        {
+          "name": "Kappa Architecture",
+          "type": "pattern",
+          "slug": "kappa-architecture"
+        },
+        {
+          "name": "Star Schema",
+          "type": "pattern",
+          "slug": "star-schema"
+        },
+        {
+          "name": "Slowly Changing Dimensions",
+          "type": "pattern",
+          "slug": "slowly-changing-dimensions"
+        },
+        {
+          "name": "Read Replica",
+          "type": "pattern",
+          "slug": "read-replica"
+        },
+        {
+          "name": "Multi-Leader Replication",
+          "type": "pattern",
+          "slug": "multi-leader-replication"
+        },
+        {
+          "name": "Leaderless Replication",
+          "type": "pattern",
+          "slug": "leaderless-replication"
+        },
+        {
+          "name": "Partitioning Strategies",
+          "type": "pattern",
+          "slug": "partitioning-strategies"
+        },
+        {
+          "name": "Secondary Index",
+          "type": "pattern",
+          "slug": "secondary-index"
+        },
+        {
+          "name": "Dummy",
+          "type": "pattern",
+          "slug": "dummy"
+        },
+        {
+          "name": "Fake",
+          "type": "pattern",
+          "slug": "fake"
+        },
+        {
+          "name": "Stub",
+          "type": "pattern",
+          "slug": "stub"
+        },
+        {
+          "name": "Spy",
+          "type": "pattern",
+          "slug": "spy"
+        },
+        {
+          "name": "Mock",
+          "type": "pattern",
+          "slug": "mock"
+        },
+        {
+          "name": "Arrange\u2013Act\u2013Assert",
+          "type": "pattern",
+          "slug": "arrange-act-assert"
+        },
+        {
+          "name": "Given\u2013When\u2013Then",
+          "type": "pattern",
+          "slug": "given-when-then"
+        },
+        {
+          "name": "Page Object",
+          "type": "pattern",
+          "slug": "page-object"
+        },
+        {
+          "name": "Test Data Builder",
+          "type": "pattern",
+          "slug": "test-data-builder"
+        },
+        {
+          "name": "Object Mother",
+          "type": "pattern",
+          "slug": "object-mother"
+        },
+        {
+          "name": "Golden Master / Approval",
+          "type": "pattern",
+          "slug": "golden-master-approval"
+        },
+        {
+          "name": "Property-Based Testing",
+          "type": "pattern",
+          "slug": "property-based-testing"
+        },
+        {
+          "name": "Snapshot Testing",
+          "type": "pattern",
+          "slug": "snapshot-testing"
+        },
+        {
+          "name": "Test Pyramid",
+          "type": "pattern",
+          "slug": "test-pyramid"
+        },
+        {
+          "name": "Consumer-Driven Contract",
+          "type": "pattern",
+          "slug": "consumer-driven-contract"
+        },
+        {
+          "name": "Fixture / Setup\u2013Teardown",
+          "type": "pattern",
+          "slug": "fixture-setup-teardown"
+        },
+        {
+          "name": "Semaphore",
+          "type": "pattern",
+          "slug": "semaphore"
+        },
+        {
+          "name": "Monitor / Mutex",
+          "type": "pattern",
+          "slug": "monitor-mutex"
+        },
+        {
+          "name": "Barrier",
+          "type": "pattern",
+          "slug": "barrier"
+        },
+        {
+          "name": "CountDown Latch",
+          "type": "pattern",
+          "slug": "countdown-latch"
+        },
+        {
+          "name": "Active Object",
+          "type": "pattern",
+          "slug": "active-object"
+        },
+        {
+          "name": "Reactor",
+          "type": "pattern",
+          "slug": "reactor"
+        },
+        {
+          "name": "Proactor",
+          "type": "pattern",
+          "slug": "proactor"
+        },
+        {
+          "name": "Half-Sync / Half-Async",
+          "type": "pattern",
+          "slug": "half-sync-half-async"
+        },
+        {
+          "name": "Guarded Suspension",
+          "type": "pattern",
+          "slug": "guarded-suspension"
+        },
+        {
+          "name": "Balking",
+          "type": "pattern",
+          "slug": "balking"
+        },
+        {
+          "name": "Copy-on-Write",
+          "type": "pattern",
+          "slug": "copy-on-write"
+        },
+        {
+          "name": "Read-Copy-Update",
+          "type": "pattern",
+          "slug": "read-copy-update"
+        },
+        {
+          "name": "Immutable Object",
+          "type": "pattern",
+          "slug": "immutable-object"
+        },
+        {
+          "name": "Thread-Local Storage",
+          "type": "pattern",
+          "slug": "thread-local-storage"
+        },
+        {
+          "name": "Work Stealing",
+          "type": "pattern",
+          "slug": "work-stealing"
+        },
+        {
+          "name": "Compare-and-Swap",
+          "type": "pattern",
+          "slug": "compare-and-swap"
+        },
+        {
+          "name": "MVC",
+          "type": "pattern",
+          "slug": "mvc"
+        },
+        {
+          "name": "MVP",
+          "type": "pattern",
+          "slug": "mvp"
+        },
+        {
+          "name": "MVVM",
+          "type": "pattern",
+          "slug": "mvvm"
+        },
+        {
+          "name": "Flux / Redux",
+          "type": "pattern",
+          "slug": "flux-redux"
+        },
+        {
+          "name": "Component-Based Architecture",
+          "type": "pattern",
+          "slug": "component-based-architecture"
+        },
+        {
+          "name": "Container / Presentational",
+          "type": "pattern",
+          "slug": "container-presentational"
+        },
+        {
+          "name": "Higher-Order Component",
+          "type": "pattern",
+          "slug": "higher-order-component"
+        },
+        {
+          "name": "Render Props",
+          "type": "pattern",
+          "slug": "render-props"
+        },
+        {
+          "name": "Hooks Pattern",
+          "type": "pattern",
+          "slug": "hooks-pattern"
+        },
+        {
+          "name": "Optimistic UI",
+          "type": "pattern",
+          "slug": "optimistic-ui"
+        },
+        {
+          "name": "Virtual DOM / Reconciliation",
+          "type": "pattern",
+          "slug": "virtual-dom-reconciliation"
+        },
+        {
+          "name": "State Machine UI (XState)",
+          "type": "pattern",
+          "slug": "state-machine-ui-xstate"
+        },
+        {
+          "name": "Extract Method",
+          "type": "technique",
+          "slug": "extract-method"
+        },
+        {
+          "name": "Extract Class",
+          "type": "technique",
+          "slug": "extract-class"
+        },
+        {
+          "name": "Inline Method / Variable",
+          "type": "technique",
+          "slug": "inline-method-variable"
+        },
+        {
+          "name": "Move Method / Field",
+          "type": "technique",
+          "slug": "move-method-field"
+        },
+        {
+          "name": "Rename for Intent",
+          "type": "technique",
+          "slug": "rename-for-intent"
+        },
+        {
+          "name": "Replace Conditional with Polymorphism",
+          "type": "technique",
+          "slug": "replace-conditional-with-polymorphism"
+        },
+        {
+          "name": "Introduce Parameter Object",
+          "type": "technique",
+          "slug": "introduce-parameter-object"
+        },
+        {
+          "name": "Replace Magic Number",
+          "type": "technique",
+          "slug": "replace-magic-number"
+        },
+        {
+          "name": "Decompose Conditional",
+          "type": "technique",
+          "slug": "decompose-conditional"
+        },
+        {
+          "name": "Replace Temp with Query",
+          "type": "technique",
+          "slug": "replace-temp-with-query"
+        },
+        {
+          "name": "Encapsulate Field",
+          "type": "technique",
+          "slug": "encapsulate-field"
+        },
+        {
+          "name": "Pull Up / Push Down",
+          "type": "technique",
+          "slug": "pull-up-push-down"
+        },
+        {
+          "name": "Inheritance \u2192 Delegation",
+          "type": "technique",
+          "slug": "inheritance-to-delegation"
+        },
+        {
+          "name": "Split Phase",
+          "type": "technique",
+          "slug": "split-phase"
+        },
+        {
+          "name": "Long Method",
+          "type": "smell",
+          "slug": "long-method"
+        },
+        {
+          "name": "Large Class / God Object",
+          "type": "smell",
+          "slug": "large-class-god-object"
+        },
+        {
+          "name": "Feature Envy",
+          "type": "smell",
+          "slug": "feature-envy"
+        },
+        {
+          "name": "Data Clumps",
+          "type": "smell",
+          "slug": "data-clumps"
+        },
+        {
+          "name": "Primitive Obsession",
+          "type": "smell",
+          "slug": "primitive-obsession"
+        },
+        {
+          "name": "Shotgun Surgery",
+          "type": "smell",
+          "slug": "shotgun-surgery"
+        },
+        {
+          "name": "Divergent Change",
+          "type": "smell",
+          "slug": "divergent-change"
+        },
+        {
+          "name": "Inappropriate Intimacy",
+          "type": "smell",
+          "slug": "inappropriate-intimacy"
+        },
+        {
+          "name": "Message Chains",
+          "type": "smell",
+          "slug": "message-chains"
+        },
+        {
+          "name": "Middle Man",
+          "type": "smell",
+          "slug": "middle-man"
+        },
+        {
+          "name": "Speculative Generality",
+          "type": "smell",
+          "slug": "speculative-generality"
+        },
+        {
+          "name": "Refused Bequest",
+          "type": "smell",
+          "slug": "refused-bequest"
+        }
+      ]
+    }
+  ]
+}
