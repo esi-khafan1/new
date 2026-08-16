@@ -1,152 +1,124 @@
-/* Knowledge Base App - 100% offline, no external dependencies */
+/**
+ * Knowledge Base App Script
+ * 100% offline, no external dependencies
+ * Features: Search/filter, theme toggle, keyboard shortcuts
+ */
 
 (function() {
   'use strict';
+
+  // Theme management
+  const THEME_KEY = 'kb-theme-preference';
   
-  // Theme Toggle
-  const themeToggle = document.getElementById('kbThemeToggle');
-  const html = document.documentElement;
-  
-  // Check for saved theme preference or default to system preference
-  const savedTheme = localStorage.getItem('kb-theme');
-  if (savedTheme) {
-    html.setAttribute('data-theme', savedTheme);
+  function getPreferredTheme() {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
-  
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function() {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('kb-theme', newTheme);
-      
-      // Update icon
-      themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
-    });
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_KEY, theme);
+    updateThemeButton(theme);
+  }
+
+  function updateThemeButton(theme) {
+    const btn = document.getElementById('theme-toggle-btn');
+    if (btn) {
+      btn.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
+  }
+
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  }
+
+  // Search functionality
+  function initSearch() {
+    const searchInput = document.getElementById('search-input');
+    if (!searchInput) return;
+
+    const filterableItems = document.querySelectorAll('.toc-nav li, .item-card');
     
-    // Set initial icon
-    const currentTheme = html.getAttribute('data-theme') || 
-                        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
-  }
-  
-  // Search/Filter functionality
-  const searchInput = document.getElementById('kbSearch');
-  if (searchInput) {
     searchInput.addEventListener('input', function(e) {
       const query = e.target.value.toLowerCase().trim();
-      const items = document.querySelectorAll('.kb-item');
-      let visibleCount = 0;
       
-      items.forEach(function(item) {
-        const name = item.querySelector('.kb-item-name');
-        const type = item.querySelector('.kb-item-type');
-        const teaser = item.querySelector('.kb-item-teaser');
-        
-        const searchText = [
-          name ? name.textContent.toLowerCase() : '',
-          type ? type.textContent.toLowerCase() : '',
-          teaser ? teaser.textContent.toLowerCase() : ''
-        ].join(' ');
-        
-        if (query === '' || searchText.includes(query)) {
+      filterableItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (query === '' || text.includes(query)) {
           item.classList.remove('hidden');
-          visibleCount++;
         } else {
           item.classList.add('hidden');
         }
       });
-      
-      // Show/hide no results message
-      const noResults = document.querySelector('.kb-no-results');
-      if (noResults) {
-        if (visibleCount === 0 && query !== '') {
-          noResults.style.display = 'block';
-        } else {
-          noResults.style.display = 'none';
-        }
-      }
     });
-  }
-  
-  // Keyboard shortcuts
-  document.addEventListener('keydown', function(e) {
-    // Focus search on '/' key
-    if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
-      e.preventDefault();
-      const searchInput = document.getElementById('kbSearch');
-      if (searchInput) {
+
+    // Focus search with '/' key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+        e.preventDefault();
         searchInput.focus();
       }
-    }
-    
-    // Close sidebar on Escape (mobile)
-    if (e.key === 'Escape') {
-      const sidebar = document.querySelector('.kb-sidebar');
-      if (sidebar && window.innerWidth <= 900) {
-        sidebar.style.display = 'none';
-      }
-    }
-  });
-  
-  // Active nav link highlighting based on scroll position
-  const navLinks = document.querySelectorAll('.kb-nav-link');
-  const parts = document.querySelectorAll('.kb-part');
-  
-  if (navLinks.length > 0 && parts.length > 0) {
-    window.addEventListener('scroll', function() {
-      const scrollPos = window.scrollY + 150;
-      
-      parts.forEach(function(part, index) {
-        const partTop = part.offsetTop;
-        const partHeight = part.offsetHeight;
-        
-        if (scrollPos >= partTop && scrollPos < partTop + partHeight) {
-          navLinks.forEach(function(link) {
-            link.classList.remove('active');
-          });
-          
-          const activeLink = document.querySelector(`.kb-nav-link[href="#part${index + 1}"]`);
-          if (activeLink) {
-            activeLink.classList.add('active');
-          }
-        }
-      });
     });
   }
-  
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if (targetId !== '#') {
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
+
+  // Active TOC highlighting
+  function initActiveTOC() {
+    const tocLinks = document.querySelectorAll('.toc-nav a');
+    if (tocLinks.length === 0) return;
+
+    const sections = document.querySelectorAll('.part-section, section[id]');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          tocLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
         }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  }
+
+  // Initialize on DOM ready
+  function init() {
+    // Set initial theme
+    setTheme(getPreferredTheme());
+
+    // Bind theme toggle button
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', toggleTheme);
+    }
+
+    // Initialize features
+    initSearch();
+    initActiveTOC();
+
+    // Mark current page in TOC if applicable
+    highlightCurrentPage();
+  }
+
+  function highlightCurrentPage() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const tocLinks = document.querySelectorAll('.toc-nav a');
+    
+    tocLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        link.classList.add('active');
       }
     });
-  });
-  
-  // Copy code button (if code blocks exist)
-  document.querySelectorAll('.kb-code-block').forEach(function(codeBlock) {
-    const pre = codeBlock.querySelector('pre');
-    if (pre) {
-      const copyBtn = document.createElement('button');
-      copyBtn.textContent = 'Copy';
-      copyBtn.style.cssText = 'position:absolute;top:0.5rem;right:0.5rem;padding:0.25rem 0.5rem;font-size:0.7rem;border:1px solid var(--border-color);border-radius:3px;background:var(--bg-secondary);color:var(--text-secondary);cursor:pointer;';
-      copyBtn.addEventListener('click', function() {
-        navigator.clipboard.writeText(pre.textContent).then(function() {
-          copyBtn.textContent = 'Copied!';
-          setTimeout(function() {
-            copyBtn.textContent = 'Copy';
-          }, 2000);
-        });
-      });
-      codeBlock.style.position = 'relative';
-      codeBlock.appendChild(copyBtn);
-    }
-  });
-  
+  }
+
+  // Run initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
