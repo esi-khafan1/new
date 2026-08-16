@@ -1,97 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Information Hiding — Knowledge Base</title>
-  <meta name="description" content="A fundamental guideline for software design.">
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <div class="kb-container">
-    <nav class="kb-sidebar">
-      <div class="kb-logo">~<span>nabi</span>.dev KB</div>
-      <input type="text" id="kbSearch" class="kb-search" placeholder="Search topics... (press /)">
-      <ul class="kb-nav">
-        <li class="kb-nav-item"><a href="../index.html#part1" class="kb-nav-link">Part 1: Foundations</a><span class="kb-nav-count">48</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part2" class="kb-nav-link">Part 2: Modularity & Design</a><span class="kb-nav-count">31</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part3" class="kb-nav-link">Part 3: Application Architecture</a><span class="kb-nav-count">40</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part4" class="kb-nav-link">Part 4: Performance & Reliability</a><span class="kb-nav-count">36</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part5" class="kb-nav-link">Part 5: Domain, Distributed & Leadership</a><span class="kb-nav-count">43</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part6" class="kb-nav-link">Part 6: Cross-Cutting Tracks</a><span class="kb-nav-count">136</span></li>
-      </ul>
-      <div class="theme-toggle"><button id="themeToggle" class="theme-btn">🌙 Dark Mode</button></div>
-    </nav>
-    <main class="kb-main">
-      <div class="topic-container">
-        <header class="topic-header">
-          <div class="topic-breadcrumb"><a href="../index.html">← Back to Index</a> / Part 1: Foundations</div>
-          <h1 class="topic-title">Information Hiding</h1>
-          <div class="topic-meta">
-            <span class="topic-part">Part 1: Foundations</span>
-            <span class="topic-type-badge principle">principle</span>
-          </div>
-          <nav class="topic-nav"><a href="cqs-command-query-separation.html" class="topic-nav-btn">← Previous</a><a href="encapsulation.html" class="topic-nav-btn">Next →</a></nav>
-        </header>
-        
-        <section class="topic-section">
-          <h2>Definition</h2>
-          <p><strong>Information Hiding</strong> is a fundamental guideline for software design.</p>
-        </section>
-        
-        <section class="topic-section">
-          <h2>The Problem It Solves</h2>
-          <p>Without this principle, developers face challenges with tight coupling, code duplication, rigidity, poor testability, and unclear responsibilities.</p>
-        </section>
-        
-        <section class="topic-section">
-          <h2>Key Concepts</h2>
-          <ul>
-            <li>Separation of concerns</li>
-            <li>Abstraction boundaries</li>
-            <li>Composability</li>
-            <li>Explicit over implicit</li>
-          </ul>
-        </section>
-        
-        <section class="topic-section">
-          <h2>C++ Example</h2>
-<pre><code>// Apply Information Hiding in your C++ code
-// Focus on clean abstractions and maintainable design
-class Example {
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Information Hiding</title><link rel="stylesheet" href="../assets/style.css"></head><body><div class="kb-container"><main class="kb-main"><div class="topic-container"><header class="topic-header"><div class="topic-breadcrumb"><a href="../index.html">Back to Index</a> / Part 1: Foundations</div><h1 class="topic-title">Information Hiding</h1><div class="topic-meta"><span class="topic-part">Part 1: Foundations</span><span class="topic-type-badge principle">principle</span></div></header><section class="topic-section"><h2>Definition</h2><p>Information hiding means a module conceals design decisions that are likely to change and exposes only the stable operations clients need. The boundary protects knowledge, not merely fields: algorithms, storage formats, synchronization, vendor APIs, and failure recovery can all be hidden.</p><p>Encapsulation is one mechanism for information hiding, but the principle also applies across modules, services, and packages. A good boundary prevents callers from depending on details that would make change expensive.</p></section><section class="topic-section"><h2>Problem It Solves</h2><p>If callers know a database schema, cache layout, or retry algorithm, the hidden decision becomes a distributed dependency. One implementation change then requires edits and retesting across the system.</p></section><section class="topic-section"><h2>C++ Before</h2><pre><code>struct UserStore {
+  std::unordered_map&lt;int, User&gt; cache;
+  sqlite3* connection;
+};
+// Every caller manipulates storage details directly.</code></pre></section><section class="topic-section"><h2>C++ After</h2><pre><code>class UserDirectory {
+  class Impl;
+  std::unique_ptr&lt;Impl&gt; impl;
 public:
-    void apply() { /* Implementation */ }
-};</code></pre>
-        </section>
-        
-        <section class="topic-section">
-          <h2>Trade-offs</h2>
-          <p>Consider complexity, performance overhead, learning curve, and over-engineering risks.</p>
-        </section>
-        
-        <section class="topic-section">
-          <h2>Relationships</h2>
-          <div class="relationships-grid"><a href="srp-single-responsibility.html" class="relationship-link">SRP — Single Responsibility</a>
-<a href="ocp-openclosed.html" class="relationship-link">OCP — Open/Closed</a>
-<a href="lsp-liskov-substitution.html" class="relationship-link">LSP — Liskov Substitution</a>
-<a href="isp-interface-segregation.html" class="relationship-link">ISP — Interface Segregation</a>
-<a href="dip-dependency-inversion.html" class="relationship-link">DIP — Dependency Inversion</a>
-<a href="dry-dont-repeat-yourself.html" class="relationship-link">DRY — Don't Repeat Yourself</a>
-</div>
-        </section>
-        
-        <section class="topic-section takeaways">
-          <h2>Key Takeaways</h2>
-          <ul>
-            <li>Focus on single responsibilities</li>
-            <li>Program to interfaces</li>
-            <li>Favor composition</li>
-            <li>Design for change</li>
-          </ul>
-        </section>
-      </div>
-    </main>
-  </div>
-  <script src="../assets/app.js"></script>
-</body>
-</html>
+  UserDirectory();
+  ~UserDirectory();
+  std::optional&lt;User&gt; find(UserId id) const;
+  void save(const User& user);
+};
+// Storage and cache decisions remain private.</code></pre></section><section class="topic-section"><h2>Trade-offs and Misuse</h2><ul><li>Hiding everything can make debugging and performance behavior opaque.</li><li>Expose meaningful diagnostics and operational metrics without exposing representation.</li><li>Hide decisions likely to change, not facts every caller genuinely needs.</li></ul></section><section class="topic-section"><h2>Relationships</h2><p>Information hiding strengthens encapsulation, low coupling, SRP, and stable abstractions.</p></section></div></main></div><script src="../assets/app.js"></script></body></html>

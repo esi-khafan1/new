@@ -1,97 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YAGNI — Knowledge Base</title>
-  <meta name="description" content="A fundamental guideline for software design.">
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <div class="kb-container">
-    <nav class="kb-sidebar">
-      <div class="kb-logo">~<span>nabi</span>.dev KB</div>
-      <input type="text" id="kbSearch" class="kb-search" placeholder="Search topics... (press /)">
-      <ul class="kb-nav">
-        <li class="kb-nav-item"><a href="../index.html#part1" class="kb-nav-link">Part 1: Foundations</a><span class="kb-nav-count">48</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part2" class="kb-nav-link">Part 2: Modularity & Design</a><span class="kb-nav-count">31</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part3" class="kb-nav-link">Part 3: Application Architecture</a><span class="kb-nav-count">40</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part4" class="kb-nav-link">Part 4: Performance & Reliability</a><span class="kb-nav-count">36</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part5" class="kb-nav-link">Part 5: Domain, Distributed & Leadership</a><span class="kb-nav-count">43</span></li>
-        <li class="kb-nav-item"><a href="../index.html#part6" class="kb-nav-link">Part 6: Cross-Cutting Tracks</a><span class="kb-nav-count">136</span></li>
-      </ul>
-      <div class="theme-toggle"><button id="themeToggle" class="theme-btn">🌙 Dark Mode</button></div>
-    </nav>
-    <main class="kb-main">
-      <div class="topic-container">
-        <header class="topic-header">
-          <div class="topic-breadcrumb"><a href="../index.html">← Back to Index</a> / Part 1: Foundations</div>
-          <h1 class="topic-title">YAGNI</h1>
-          <div class="topic-meta">
-            <span class="topic-part">Part 1: Foundations</span>
-            <span class="topic-type-badge principle">principle</span>
-          </div>
-          <nav class="topic-nav"><a href="kiss-keep-it-simple.html" class="topic-nav-btn">← Previous</a><a href="cqs-command-query-separation.html" class="topic-nav-btn">Next →</a></nav>
-        </header>
-        
-        <section class="topic-section">
-          <h2>Definition</h2>
-          <p><strong>YAGNI</strong> is a fundamental guideline for software design.</p>
-        </section>
-        
-        <section class="topic-section">
-          <h2>The Problem It Solves</h2>
-          <p>Without this principle, developers face challenges with tight coupling, code duplication, rigidity, poor testability, and unclear responsibilities.</p>
-        </section>
-        
-        <section class="topic-section">
-          <h2>Key Concepts</h2>
-          <ul>
-            <li>Separation of concerns</li>
-            <li>Abstraction boundaries</li>
-            <li>Composability</li>
-            <li>Explicit over implicit</li>
-          </ul>
-        </section>
-        
-        <section class="topic-section">
-          <h2>C++ Example</h2>
-<pre><code>// Apply YAGNI in your C++ code
-// Focus on clean abstractions and maintainable design
-class Example {
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YAGNI</title><link rel="stylesheet" href="../assets/style.css"></head><body><div class="kb-container"><main class="kb-main"><div class="topic-container"><header class="topic-header"><div class="topic-breadcrumb"><a href="../index.html">Back to Index</a> / Part 1: Foundations</div><h1 class="topic-title">YAGNI - You Aren't Gonna Need It</h1><div class="topic-meta"><span class="topic-part">Part 1: Foundations</span><span class="topic-type-badge principle">principle</span></div></header><section class="topic-section"><h2>Definition</h2><p>YAGNI says do not implement a capability until a current requirement demands it. Future features are uncertain: building them early spends design, test, documentation, and maintenance budget before their shape is known.</p><p>YAGNI does not reject good design. It rejects speculative behavior, unused extension points, and configuration knobs whose only justification is that someone might need them later.</p></section><section class="topic-section"><h2>Problem It Solves</h2><p>Speculative features create dead code and constrain future decisions. An imagined plugin system may be harder to replace than a small direct implementation once the real requirements arrive.</p></section><section class="topic-section"><h2>C++ Before</h2><pre><code>class Report {
+  std::map&lt;std::string, std::any&gt; futureOptions;
+  std::vector&lt;Plugin&gt; plugins;
+  // No current requirement uses either feature.
+};</code></pre></section><section class="topic-section"><h2>C++ After</h2><pre><code>class Report {
+  std::vector&lt;Row&gt; rows;
 public:
-    void apply() { /* Implementation */ }
-};</code></pre>
-        </section>
-        
-        <section class="topic-section">
-          <h2>Trade-offs</h2>
-          <p>Consider complexity, performance overhead, learning curve, and over-engineering risks.</p>
-        </section>
-        
-        <section class="topic-section">
-          <h2>Relationships</h2>
-          <div class="relationships-grid"><a href="srp-single-responsibility.html" class="relationship-link">SRP — Single Responsibility</a>
-<a href="ocp-openclosed.html" class="relationship-link">OCP — Open/Closed</a>
-<a href="lsp-liskov-substitution.html" class="relationship-link">LSP — Liskov Substitution</a>
-<a href="isp-interface-segregation.html" class="relationship-link">ISP — Interface Segregation</a>
-<a href="dip-dependency-inversion.html" class="relationship-link">DIP — Dependency Inversion</a>
-<a href="dry-dont-repeat-yourself.html" class="relationship-link">DRY — Don't Repeat Yourself</a>
-</div>
-        </section>
-        
-        <section class="topic-section takeaways">
-          <h2>Key Takeaways</h2>
-          <ul>
-            <li>Focus on single responsibilities</li>
-            <li>Program to interfaces</li>
-            <li>Favor composition</li>
-            <li>Design for change</li>
-          </ul>
-        </section>
-      </div>
-    </main>
-  </div>
-  <script src="../assets/app.js"></script>
-</body>
-</html>
+  explicit Report(std::vector&lt;Row&gt; data) : rows(std::move(data)) {}
+  const auto& data() const { return rows; }
+};
+// Add extension only when a concrete second use case exists.</code></pre></section><section class="topic-section"><h2>Trade-offs and Misuse</h2><ul><li>Avoiding all preparation can make an imminent change expensive; design for known constraints.</li><li>Build stable domain concepts early, not hypothetical features.</li><li>Use experiments and measurements to replace guesses with evidence.</li></ul></section><section class="topic-section"><h2>Relationships</h2><p>YAGNI reinforces KISS and incremental delivery. It must be balanced with OCP when variation is already demonstrated.</p></section></div></main></div><script src="../assets/app.js"></script></body></html>
